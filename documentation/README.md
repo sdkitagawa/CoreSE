@@ -51,7 +51,7 @@ The <a href="https://corese.github.io/#/README">Getting Started</a> page is a gu
 
 ## Where CoreSE is used
 * CoreSE is the core language built into AEGIS Core
-* CoreSE is the scripting language for the AEGIS Core game engine (https://www.youtube.com/@WarpPortal)
+* CoreSE is the scripting language for the [AEGIS Core game engine](https://www.youtube.com/@WarpPortal)
 
 ## License
 CoreSE is available under the permissive MIT license.
