@@ -33,7 +33,7 @@
 # Declaring Variables
 To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), i.e:
 
-```swift
+```cpp
 var $firstVariable;
 var $firstVariable
 set $firstVariable;
