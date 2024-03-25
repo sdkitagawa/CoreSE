@@ -58,20 +58,19 @@
 -	script	mac_address_check_and_disconnect	-1,{
 
 OnPCLoadMapEvent:
-	
-        	set(.maps$,"map_x01,map_y02")
-        	set(@map$,strcharinfo(3))
-    
-    			if((compare(","+.maps$+"," , ","+@map$+",")) && (query_sql("SELECT zoneaccount_id FROM login LEFT JOIN `character` ON zone.account_id=`char`account_id WHERE login.last_mac=(SELECT last_macaddress FROM login WHEREaccount_id="+getcharid(3)+") AND `character`.online=1",@account_id) > 1))
-    		{
-    				for(set(@thisIndex,0) @thisIndex < getarraysize(@account_id) if(@thisIndex,@thisIndex+1))
-    			{
-    				getmapxy(@tempMap$,@x,@y,0,rid2name(@account_id[@j]))
-    				if(@map$ == @tempMap$)
-    				command(">disconnect "+strcharinfo(0)+"")
-    			}
-    		}
-    end()
+
+set(.maps$,"map_x01,map_y02")
+set(@map$,strcharinfo(3))
+ 
+if((compare(","+.maps$+"," , ","+@map$+",")) && (query_sql("SELECT zoneaccount_id FROM login LEFT JOIN `character` ON zone.account_id=`char`account_id WHERE login.last_mac=(SELECT last_macaddress FROM login WHEREaccount_id="+getcharid(3)+") AND `character`.online=1",@account_id) > 1)) {
+    	for(set(@thisIndex,0) @thisIndex < getarraysize(@account_id) if(@thisIndex,@thisIndex+1))
+    	{
+    		getmapxy(@tempMap$,@x,@y,0,rid2name(@account_id[@j]))
+    		if(@map$ == @tempMap$)
+    		command(">disconnect "+strcharinfo(0)+"")
+    	}
+    }
+	end()
 }
  ```
 
