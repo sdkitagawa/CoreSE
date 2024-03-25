@@ -2,16 +2,48 @@
 <img src="https://raw.githubusercontent.com/sdkitagawa/corese/master/assets/img/logo.png" height="120px" alt="CoreSE Programming Language logo with 3 squares stacked diagonally in a counterclockwise direction each in a different color. The first is in white, the second is in azure and the third in a dark blue tone almost turning purple. And at the top of the 3 stacked squares there is the logo of the CoreSE programming language (which is pronounced Direction Course and Bearing) which are two letters C facing each other forming an infinity symbol and making a course. Each letter C has two different colors. In the letter C on the left at the top we have the dark blue tone and the azure tone at the bottom, while in the letter C on the right we have the opposite." title="CoresE Programming Language">
 </p>
 
-**CoreSE** is a powerful, dynamically typed, lightweight and embedded programming language written in C++ focused on Hooking Applications, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
 
-**CoreSE** supports procedural programming, object-oriented programming and functional programming. Thanks to special built-in methods, it can also be used as a prototype-based programming language.
+**CoreSE** also contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.
 
-**CoreSE** has been developed from scratch for the <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.
+**CoreSE** supports procedural programming, object-oriented programming and functional programming. Thanks to special built-in methods, it can also be used as a prototype-based programming language. 
 
+**CoreSE** it is also very similar in some ways to C/C++ and Lua, but fundamentally different in some other aspects. The CoreSE language resembles C/C++ and Lua but does not have C/C++'s static typing and strong type checking and it is simple and flexible as Lua. CoreSE follows most of the C/C++ expression syntax, naming conventions and basic control-flow constructs which was the reason why it was named CoreSE (because it follows a different Course).
+
+**CoreSE** has been developed from scratch for <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.
+
+<details>
+
+
+<summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
+<ul>
+	<li><a href="documentation/hello_world.md">Hello World</a></li>
+	<li><a href="documentation/variables.md">Variables</a></li>
+	<li><a href="documentation/declaring_variables.md">Declaring Variables</a></li>
+	<li><a href="documentation/prefix_operator.md">Prefix Operator</a></li>
+	<li><a href="documentation/variable_scope.md">Variable Scope</a></li>
+	<li><a href="documentation/prefix_global_variables.md">Prefix Global Variables</a></li>
+	<li><a href="documentation/prefix_client_side_variables.md">Prefix Client Side Variables</a></li>
+	<li><a href="documentation/prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
+	<li><a href="documentation/prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
+	<li><a href="documentation/prefix_instance_variables.md">Prefix Instance Variables</a></li>
+	<li><a href="documentation/postfix_data_type_variables.md">Postfix Data Type Variables</a></li>
+	<li><a href="documentation/array_data_type_variables.md">Array Data Type Variables</a></li>
+	<li><a href="documentation/if_and_else_statement.md">If & Else Statement</a></li>
+	<li><a href="documentation/switch_and_case_statement.md">Switch & Case Statement</a></li>
+	<li><a href="documentation/while_statement.md">While Statement</a></li>
+	<li><a href="documentation/for_statement.md">For Statement</a></li>
+	<li><a href="documentation/do_statement.md">Do Statement</a></li>
+	<li><a href="documentation/freeloop_statement.md">Freeloop Statement</a></li>
+	<li><a href="documentation/function_declarations.md">Function Declarations</a></li>
+</ul>
+<br />
+
+</details>
 
 ## Features
-* Dynamic typing
-* Dynamic Scoping
+* Statical and Strong Typing
+* Statical and Strong Scoping
 * Higher-order functions and classes
 * Classes and inheritance
 * Nested classes
