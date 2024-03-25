@@ -22,7 +22,7 @@
 
 ## How does it look a CoreSE code
 
-```swift
+```cpp
 -	script	mac_address_check_and_disconnect	-1,{
 
 OnPCLoadMapEvent:
