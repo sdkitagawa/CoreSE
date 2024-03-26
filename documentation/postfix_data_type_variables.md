@@ -30,30 +30,32 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Postfix Data Type Variables
+As previously stated in this documentation the `Postfix` is always used to define whether a variable is **integer** (**positive** and **negative**, however whole numbers only) or **string**.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+You can check all the **Postfix Data Types** possibilities bellow:
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+---
+| <center>How to Declare</center> | <center>Descripton</center> |
+| ----------- | ----------- |
+| <center>`variableName`</center> | Permanent Server Side integer variable. |
+| <center>`variableName$`</center> | Permanent Server Side string variable. |
+| <center>`@variableName`</center> | Temporary Server Side integer variable. |
+| <center>`@variableName$`</center> | Temporary Server Side string variable. |
+| <center>`$variableName$`</center> | Permanent Global string variable. |
+| <center>`$@variableName`</center> | Temporary Global integer variable. |
+| <center>`$@variableName$`</center> | Temporary Global string variable. |
+| <center>`.variableName`</center> | Client Side integer variable. |
+| <center>`.variableName$`</center> | Client Side string variable. |
+| <center>`.@variableName`</center> | Scope integer variable. |
+| <center>`.@variableName$`</center> | Scope string variable. |
+| <center>`'variableName`</center> | Instance integer variable. |
+| <center>`'variableName$`</center> | Instance string variable. |
+| <center>`#variableName`</center> | Permanent Local Account Zone integer variable. |
+| <center>`#variableName$`</center> | Permanent Local Account Zone string variable. |
+| <center>`##variableName`</center> | Permanent Global integer variable. |
+| <center>`##variableName$`</center> | Permanent Global string variable. |
+---
+<br />
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
-
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
-
-```cs
-set $firstVariable = "This is your first variable!";
-```
-
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
-```
+You must always used the word `set` or `var` to define your variable, otherwise if a variable was never set, it is considered equal to zero for **integer** variables or an **empty string** (`""`, nothing between the quotes) for **string** variables forever, and no trace remains of it even if it was stored with character or account data.

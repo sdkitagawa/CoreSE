@@ -30,30 +30,34 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Variables
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+## How does it work
+You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+Variable names can have normal `alpha-numeric characters` and can have `numeric characters`. **CoreSE** is **Case Sensitive**.
+<br />
+<br />
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
+### Understanding Alpha-Numeric Characters
+When it comes to alphanumeric characters, the rule is that we can use letters including the characters from **`A`** to **`Z`** (which we call it **`adamantoise case`** also known as **upper case**) and the characters from **`a`** to **`z`** (**`moogle case`** also known as **lower case**).
+<br />
 
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+### Understanding Numeric Characters
+The rule is that we can use number digits from **`0`** to **`9`**. Keep reading to understand the variable naming conventions for CoreSE.
+<br />
+<br />
 
-```cs
-set $firstVariable = "This is your first variable!";
-```
-
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
-```
+# How to name your variables
+Here are the good practices on how to name your variables:
+ - Name your variables using Camel Case Notation (thisIscamelCase);
+ - Use alphanumeric characters and underscore character (for special cases);
+ - No special characters like: @, #, $, %, !
+   - **Note**: these are special characters used for CoreSE to point Variable scoping and such);
+ - Names must begin with an alphabetical letter or an underscore not a number;
+ - Variable names are case-sensitive;
+ - Don't use contractions or abbreviations.
+ - Don't include the data type of the variable name when using coding in typed languages (C#, C/C++, Java).
+   - It can be useful in JavaScript though.
+ - Variable names should be descriptive and meaningful.
+ - Variables can't be a keyword reserved by the programming language built-in functions or such.

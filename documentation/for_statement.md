@@ -30,30 +30,18 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# For Statement
+**For Statements** are another pretest looping structure. It is considered a specialized form of the `while` statement, and is usually associated with counter-controlled loops. Here are the steps of the `for statement`: 
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+- The initialize statement is executed first and only once.
+- The condition test is performed. 
+  - When the condition evaluates to `False`, the rest of the for statement is skipped.
+  - When the condition evaluates to `True`, the body of the loop is executed, then the update statement is executed (this usually involves incrementing a variable).
+- Then the condition is reevaluated and the cycle continues.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+Check the example below for more:
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
-
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
-
-```cs
-set $firstVariable = "This is your first variable!";
-```
-
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
+```cpp
+for( .@i = 1; .@i <= 5; .@i++ )
+  dialog "This line will print 5 times.";
 ```

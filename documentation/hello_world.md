@@ -30,30 +30,12 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Hello World
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+### Let's get started
+Open your IDE or scratchpad and write your first **Hello World!** using **CoreSE**.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
-
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
-
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
-
-```cs
-set $firstVariable = "This is your first variable!";
-```
-
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
+```cpp
+OnPCLoginEvent:
+dialog "Hello World!";
 ```

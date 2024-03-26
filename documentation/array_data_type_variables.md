@@ -30,30 +30,19 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Array Data Type Variables
+There's not much to say about **Array Data Type** variables. These are variables capable to store multiple values in a single variable by using different indexes.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+This data type will allow you to quickly fill up an array in one go.
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
+**Follow the pattern**: `setarray <prefix operator> <array name>[<initial index>] = <value 1>, <value 2>, <value 3>, ...;`
+
+# How to declare an Array Variable
+Here is how to declare `array variables`:
+
+```cpp
+setarray .@myArray[0] = 200, 300, 150;
+setarray .@myArray[0], 200, 300, 150;
 ```
 
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
-
-```cs
-set $firstVariable = "This is your first variable!";
-```
-
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
-```

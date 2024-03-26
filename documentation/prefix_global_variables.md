@@ -30,30 +30,18 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Prefix Global Variables
+**Global variables** are in fact properties of the `global object`. In a CoreSE script file the `global object` is the whole **Server Side**, so you can set and access global variables.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+Consequently, you can access global variables declared from different **Client Sides**. For example, if a variable called a variable `$userName` declared in a Script, you can refer to this variable from the **Server Side** and **Client Side**.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+They are stored by Zone Server in the database table `zone_reg` or `mapreg`.
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
-
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+# How to declare a Global Variable
+Here is how to declare `global variables`:
 
 ```cs
-set $firstVariable = "This is your first variable!";
+set $variableName;
 ```
 
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
-```
+**Note**: The `$` before the `variableName` it is a **global variable**.

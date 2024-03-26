@@ -30,30 +30,19 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
-
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
-
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+# Variable Scope
+Let's suppose you declare a variable as follows:
 
 ```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
+set $variableName;
 ```
 
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+This is what we call it a `global variable` and it is called `global` because it is available to any other code in the current document.
+
+Now let's change the example, let's suppose you are declaring a variable using:
 
 ```cs
-set $firstVariable = "This is your first variable!";
+set .@variableName;
 ```
 
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
-```
+This what we call `local variable`, because it is available only within that specific block of code. This is important for scripts which are called with no RID attached, that is, not triggered by a specific client object.

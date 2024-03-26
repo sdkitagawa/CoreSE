@@ -30,30 +30,21 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Prefix Global Constant Variables
+**Prefix Global Constant Variables** are in fact properties of the `global object`. In a CoreSE script file the `global object` is the whole **Server Side**, so you can set and access global variables.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+Consequently, you can access global variables declared from different **Client Sides**. For example, if a variable called a variable `#userName` declared in a Script, you can refer to this variable from the **Server Side** and **Client Side**.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+A permanent `global account variable` stored by the Inter Server. They are stored in the `global_acc_reg_num` and `global_acc_reg_str` tables.
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
+The only difference you will note from normal `#` (**global constant variable**) is that when you have multiple **Inter Servers** connected to the same **Zone Server**. The `#` (**global constant variables**) are unique to each **Inter Server**, while the `##` (**local constant variables**) are shared by all these **Inter Servers**.
 
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+# How to declare a Global Constant Variable
+Here is how to declare `global constant variables`:
 
 ```cs
-set $firstVariable = "This is your first variable!";
+set ##variableName$ = "Text";
+set ##variableName$, "Text";
 ```
 
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
-```
+**Note**: The `##` before the `variableName` it is a **global constant variable**.

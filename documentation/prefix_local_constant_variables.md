@@ -30,30 +30,17 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Prefix Local Constant Variables
+**Prefix Local Constant Variables** are stored by **Inter Server** into `acc_reg_num` table and `acc_reg_str`.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+The only difference you will note from normal `#` (**local constant variable**) is that when you have multiple **Inter Servers** connected to the same **Zone Server**. The `#` (**global constant variables**) are unique to each **Inter Server**, while the `##` (**local constant variables**) are shared by all these **Inter Servers**.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
-
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
-
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+# How to declare a Local Constant Variable
+Here is how to declare `local constant variables`:
 
 ```cs
-set $firstVariable = "This is your first variable!";
+set #variableName$ = "Text";
+set #variableName$, "Text";
 ```
 
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
-```
+**Note**: The `#` before the `variableName` it is a **local constant variable**.

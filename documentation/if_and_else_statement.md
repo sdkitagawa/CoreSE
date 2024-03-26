@@ -30,30 +30,66 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# If & Else Statement
+This is the basic conditional statement command, and it is not the only one available in this scripting language. The condition can be any expression. All expressions resulting in a non-zero value will be considered `True`, including negative values. All expressions resulting in a zero are `False`.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+If the expression results in `True`, the statement will be executed. If it is `False`, nothing happens and we move on to the next line of the script.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+## First Example
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
+```cpp
+if (1) dialog "This will always print.";
+if (0) dialog "And this will never print.";
+if (5) dialog "This will also always print.";
+if (-1) dialog "Funny as it is, this will also print just fine.";
 ```
 
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+## Second Example
 
-```cs
-set $firstVariable = "This is your first variable!";
+```cpp
+.@count++;
+dialog "Hello!";
+if (.@count == 1) dialog "This is the first time you have talked to me.";
+if (.@count == 2) dialog "This is the second time you have talked to me.";
+if (.@count == 3) dialog "This is the third time you have talked to me.";
+if (.@count == 4) {
+	dialog "This is the fourth time you have talked to me.";
+	dialog "I think I am getting amnesia, I have forgotten about you...";
+	.@count = 0;
+}
+close;
 ```
 
-You can also use a `comma` (`,`) instead of the `equal to` signal.
+## Third Example
 
-```cs
-set $firstVariable, "This is your first variable!";
+```cpp
+dialog "[Single Checker Dude]";
+// 2312 it is an ID
+.@itemId = 2312;
+if (countitem(.@itemId) < 1) {
+	mes "Can you please bring me that " + .@itemId + "?";
+	close;
+}
+dialog "Oh, you brought me!";
+dialog "I didn't really want it, I was just wanting to see one.";
+close;
+```
+
+## Fourth Example
+
+```cpp
+dialog "[Multiple Checks Dude]";
+// 2312 it is an ID
+.@itemId = 2312;
+if (@queststarted == 1 && countitem(.@itemId) >= 5) {
+	dialog "Nice! You just have started the quest and brought me 5 Apples.";
+	@queststarted = 0;
+	delitem 512,5;
+	close;
+} else {
+	dialog "Please bring me 5 apples.";
+	@queststarted = 1;
+	close;
+}
+
 ```

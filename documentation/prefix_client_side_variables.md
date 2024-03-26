@@ -30,30 +30,17 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Prefix Client Side Variables
+**Prefix Client Side Variables** exist in the **Client Side** only and disappear when the **Server Side** restarts or when the script is reloaded.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+Can be accessed from inside of the **Client Side** or by calling the function `getvariableofpc`. Function objects can also have `.variables` which are accessible from inside the function, however 'getvariableofpc'does NOT work on function objects.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
-
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
-
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+# How to declare a Client Side Variable
+Here is how to declare `client side variables`:
 
 ```cs
-set $firstVariable = "This is your first variable!";
+set .variableName$ = "Text";
+set .variableName$, "Text";
 ```
 
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
-```
+**Note**: The `.` before the `variableName` it is a **client side variable**.

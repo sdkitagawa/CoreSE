@@ -30,30 +30,27 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Do Statement
+The `do...while` is the only post-test loop structure available in this script language. With a post-test, the statements are executed once before the condition is tested.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+- When the condition is `True`, the statement(s) are repeated. 
+- When the condition is `False`, control is transferred to the statement following the 'do...while' loop expression.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+## First Example
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
+```cpp
+dialog "This will countdown from 10 to 1.";
+.@i = 10;
+do {
+	dialog .@i;
+	.@i -= 1;
+} while (.@i > 0);
 ```
 
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
-
-```cs
-set $firstVariable = "This is your first variable!";
-```
-
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
+## Second Example
+```cpp
+dialog "This menu will keep appearing until you pick Cancel";
+do {
+	.@menu = select("- First Option:- Second Option:- Third Option:- Cancel");
+} while (.@menu != 4);
 ```

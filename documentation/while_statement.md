@@ -30,30 +30,18 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# While Statement
+This is probably the simplest and most frequently used **loop structure**. The `while statement` can be interpreted as `while {condition} is true, perform {statement}`.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+It is a pretest loop, meaning the conditional expression is tested before any of the statements in the body of the loop are performed.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+- If the condition evaluates to `False`, the statement(s) in the body of the loop is/are never executed. 
+- If the condition evaluates to `True`, the statement(s) are executed, then control transfers back to the conditional expression, which is reevaluated and the cycle continues.
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
+Check the example below for more:
 
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
-
-```cs
-set $firstVariable = "This is your first variable!";
-```
-
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
+```cpp
+while (10 >= 1)) {
+	doSomething;
+}
 ```

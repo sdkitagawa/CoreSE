@@ -30,30 +30,27 @@
 </details>
 <br />
 
-# Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
+# Freeloop Statement
+Toggling this to enabled (1) allows the script instance to bypass the infinite loop protection, allowing your script to loop as much as it may need. Disabling (0) will warn you if an infinite loop is detected.
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+The structure will return the state of freeloop for the attached script, even if no argument is provided.
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+```cpp
+// Enabling the script to loop freely
+freeloop(1);
 
-```cs
-var $firstVariable;
-var $firstVariable
-set $firstVariable;
-set $firstVariable
-```
+// Be careful with what you do here
+for ( .@i = 0; .@i < .@bigloop; .@i++ ) {
+  doThis;
+// Will sleep the script for 1ms when detect an infinity loop to
+// Let AEGIS Core do what it needs to do (socket, timer, process, etc.)
+}
 
-# Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+// Disable the freeloop
+freeloop(0);
 
-```cs
-set $firstVariable = "This is your first variable!";
-```
-
-You can also use a `comma` (`,`) instead of the `equal to` signal.
-
-```cs
-set $firstVariable, "This is your first variable!";
+for ( .@i = 0; .@i < .@bigloop; .@i++ ) {
+  doThis;
+// Throw an infinity loop error
+}
 ```
