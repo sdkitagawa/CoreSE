@@ -13,7 +13,7 @@
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
 	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_client_side_variables.md">Prefix Client Side Variables</a></li>
+	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
 	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
 	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
 	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
@@ -32,7 +32,6 @@
 
 # Array Data Type Variables
 There's not much to say about **Array Data Type** variables. These are variables capable to store multiple values in a single variable by using different indexes.
-
 
 This data type will allow you to quickly fill up an array in one go.
 

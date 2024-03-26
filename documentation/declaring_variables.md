@@ -13,7 +13,7 @@
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
 	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_client_side_variables.md">Prefix Client Side Variables</a></li>
+	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
 	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
 	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
 	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
@@ -34,7 +34,7 @@
 To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
 
 **Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`. 
+**Optional Pattern** `<keyword> <prefix operator> <variable name>`.
 
 **Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
 

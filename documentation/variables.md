@@ -13,7 +13,7 @@
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
 	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_client_side_variables.md">Prefix Client Side Variables</a></li>
+	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
 	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
 	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
 	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
@@ -56,8 +56,6 @@ Here are the good practices on how to name your variables:
    - **Note**: these are special characters used for CoreSE to point Variable scoping and such);
  - Names must begin with an alphabetical letter or an underscore not a number;
  - Variable names are case-sensitive;
- - Don't use contractions or abbreviations.
- - Don't include the data type of the variable name when using coding in typed languages (C#, C/C++, Java).
-   - It can be useful in JavaScript though.
- - Variable names should be descriptive and meaningful.
+ - Don't use contractions or abbreviations;
+ - Variable names should be descriptive and meaningful;
  - Variables can't be a keyword reserved by the programming language built-in functions or such.

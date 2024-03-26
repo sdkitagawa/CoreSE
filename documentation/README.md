@@ -13,8 +13,6 @@
 **CoreSE** has been developed from scratch for <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.
 
 <details>
-
-
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
 <ul>
 	<li><a href="hello_world.md">Hello World</a></li>
@@ -78,7 +76,7 @@ if((compare(","+.maps$+"," , ","+@map$+",")) && (query_sql("SELECT zoneaccount_i
 CoreSE was supported by a AEGIS Core which is a closed-source project from [GRAVITY](https://www.gravity.co.kr/). This programming language has great inspiration comes from the elegant <a href="http://www.lua.org" target="_blank">Lua</a> and <a href="https://www.gravity-lang.org/" target="_blank">Gravity</a> programming languages. Special thanks and credits to [**Marco Bambini**](https://github.com/marcobambini) and [**Roberto Ierusalimschy**](https://github.com/roberto-ieru) and [**Luiz Henrique Figueiredo**](https://github.com/lhf) for the logo, documentation and also language structure ideas.
 
 ## Documentation
-The <a href="https://corese.github.io/#/README">Getting Started</a> page is a guide for downloading and compiling the language. There is also a more extensive <a href="https://gravity-lang.org">language documentation</a>. Official [wiki](https://github.com/marcobambini/gravity/wiki) is used to collect related projects and tools.
+The <a href="https://corese.github.io/#/README">Getting Started</a> page is a guide for downloading and compiling the language. There is also a more extensive <a href="https://corese.github.io">language documentation</a>. Official [wiki](https://github.com/sdkitagawa/CoreSE/wiki) is used to collect related projects and tools.
 
 ## Where CoreSE is used
 * CoreSE is the core language built into AEGIS Core

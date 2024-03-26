@@ -13,7 +13,7 @@
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
 	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_client_side_variables.md">Prefix Client Side Variables</a></li>
+	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
 	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
 	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
 	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
@@ -38,23 +38,23 @@ You can check all the **Postfix Data Types** possibilities bellow:
 ---
 | <center>How to Declare</center> | <center>Descripton</center> |
 | ----------- | ----------- |
-| <center>`variableName`</center> | Permanent Server Side integer variable. |
-| <center>`variableName$`</center> | Permanent Server Side string variable. |
-| <center>`@variableName`</center> | Temporary Server Side integer variable. |
-| <center>`@variableName$`</center> | Temporary Server Side string variable. |
+| <center>`variableName`</center> | Permanent Character Zone integer variable. |
+| <center>`variableName$`</center> | Permanent Character Zone string variable. |
+| <center>`@variableName`</center> | Temporary Character Zone integer variable. |
+| <center>`@variableName$`</center> | Temporary Character Zone string variable. |
 | <center>`$variableName$`</center> | Permanent Global string variable. |
 | <center>`$@variableName`</center> | Temporary Global integer variable. |
 | <center>`$@variableName$`</center> | Temporary Global string variable. |
-| <center>`.variableName`</center> | Client Side integer variable. |
-| <center>`.variableName$`</center> | Client Side string variable. |
-| <center>`.@variableName`</center> | Scope integer variable. |
-| <center>`.@variableName$`</center> | Scope string variable. |
+| <center>`.variableName`</center> | AI integer variable. |
+| <center>`.variableName$`</center> | AI string variable. |
+| <center>`.@variableName`</center> | Local integer variable. |
+| <center>`.@variableName$`</center> | Local string variable. |
 | <center>`'variableName`</center> | Instance integer variable. |
 | <center>`'variableName$`</center> | Instance string variable. |
 | <center>`#variableName`</center> | Permanent Local Account Zone integer variable. |
 | <center>`#variableName$`</center> | Permanent Local Account Zone string variable. |
-| <center>`##variableName`</center> | Permanent Global integer variable. |
-| <center>`##variableName$`</center> | Permanent Global string variable. |
+| <center>`##variableName`</center> | Permanent Global Account Zone integer variable. |
+| <center>`##variableName$`</center> | Permanent Global Account Zone string variable. |
 ---
 <br />
 
