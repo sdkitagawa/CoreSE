@@ -17,25 +17,25 @@
 
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
 <ul>
-	<li><a href="documentation/hello_world.md">Hello World</a></li>
-	<li><a href="documentation/variables.md">Variables</a></li>
-	<li><a href="documentation/declaring_variables.md">Declaring Variables</a></li>
-	<li><a href="documentation/prefix_operator.md">Prefix Operator</a></li>
-	<li><a href="documentation/variable_scope.md">Variable Scope</a></li>
-	<li><a href="documentation/prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="documentation/prefix_client_side_variables.md">Prefix Client Side Variables</a></li>
-	<li><a href="documentation/prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
-	<li><a href="documentation/prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
-	<li><a href="documentation/prefix_instance_variables.md">Prefix Instance Variables</a></li>
-	<li><a href="documentation/postfix_data_type_variables.md">Postfix Data Type Variables</a></li>
-	<li><a href="documentation/array_data_type_variables.md">Array Data Type Variables</a></li>
-	<li><a href="documentation/if_and_else_statement.md">If & Else Statement</a></li>
-	<li><a href="documentation/switch_and_case_statement.md">Switch & Case Statement</a></li>
-	<li><a href="documentation/while_statement.md">While Statement</a></li>
-	<li><a href="documentation/for_statement.md">For Statement</a></li>
-	<li><a href="documentation/do_statement.md">Do Statement</a></li>
-	<li><a href="documentation/freeloop_statement.md">Freeloop Statement</a></li>
-	<li><a href="documentation/function_declarations.md">Function Declarations</a></li>
+	<li><a href="hello_world.md">Hello World</a></li>
+	<li><a href="variables.md">Variables</a></li>
+	<li><a href="declaring_variables.md">Declaring Variables</a></li>
+	<li><a href="prefix_operator.md">Prefix Operator</a></li>
+	<li><a href="variable_scope.md">Variable Scope</a></li>
+	<li><a href="prefix_global_variables.md">Prefix Global Variables</a></li>
+	<li><a href="prefix_client_side_variables.md">Prefix Client Side Variables</a></li>
+	<li><a href="prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
+	<li><a href="prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
+	<li><a href="prefix_instance_variables.md">Prefix Instance Variables</a></li>
+	<li><a href="postfix_data_type_variables.md">Postfix Data Type Variables</a></li>
+	<li><a href="array_data_type_variables.md">Array Data Type Variables</a></li>
+	<li><a href="if_and_else_statement.md">If & Else Statement</a></li>
+	<li><a href="switch_and_case_statement.md">Switch & Case Statement</a></li>
+	<li><a href="while_statement.md">While Statement</a></li>
+	<li><a href="for_statement.md">For Statement</a></li>
+	<li><a href="do_statement.md">Do Statement</a></li>
+	<li><a href="freeloop_statement.md">Freeloop Statement</a></li>
+	<li><a href="function_declarations.md">Function Declarations</a></li>
 </ul>
 <br />
 
