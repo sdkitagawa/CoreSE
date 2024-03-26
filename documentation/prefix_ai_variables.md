@@ -13,7 +13,7 @@
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
 	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_client_side_variables.md">Prefix Client Side Variables</a></li>
+	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
 	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
 	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
 	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
@@ -30,17 +30,19 @@
 </details>
 <br />
 
-# Prefix Client Side Variables
-**Prefix Client Side Variables** exist in the **Client Side** only and disappear when the **Server Side** restarts or when the script is reloaded.
+# Prefix AI Variables
+**Prefix AI Variables** exist in the **Client Side** only and disappear when the **Server Side** restarts or when the script is reloaded.
 
-Can be accessed from inside of the **Client Side** or by calling the function `getvariableofpc`. Function objects can also have `.variables` which are accessible from inside the function, however 'getvariableofpc'does NOT work on function objects.
+Can be accessed from inside of the **Client Side** or by calling the function `getvariableofpc`. Function objects can also have `.variables` which are accessible from inside the function, however `getvariableofpc` does NOT work on function objects.
 
-# How to declare a Client Side Variable
-Here is how to declare `client side variables`:
+# How to declare a AI Variable
+Here is how to declare `AI variables`:
 
 ```cs
+set .variableName = 10;
+set .variableName, 10;
 set .variableName$ = "Text";
 set .variableName$, "Text";
 ```
 
-**Note**: The `.` before the `variableName` it is a **client side variable**.
+**Note**: The `.` before the `variableName` it is an **AI**.
