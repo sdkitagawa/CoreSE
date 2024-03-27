@@ -23,7 +23,7 @@
 	<li><a href="documentation/prefix_operator.md">Prefix Operator</a></li>
 	<li><a href="documentation/variable_scope.md">Variable Scope</a></li>
 	<li><a href="documentation/prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="documentation/prefix_ai_variables.md">Prefix Client Side Variables</a></li>
+	<li><a href="documentation/prefix_ai_variables.md">Prefix AI Variables</a></li>
 	<li><a href="documentation/prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
 	<li><a href="documentation/prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
 	<li><a href="documentation/prefix_instance_variables.md">Prefix Instance Variables</a></li>
@@ -37,9 +37,8 @@
 	<li><a href="documentation/freeloop_statement.md">Freeloop Statement</a></li>
 	<li><a href="documentation/function_declarations.md">Function Declarations</a></li>
 </ul>
-<br />
-
 </details>
+<br />
 
 ## Features
 * Statical and Strong Typing
