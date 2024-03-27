@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--
+  Credits for the first Template Idea: freeCodeCamp.org
+  Credits for the content, styling and additional content: sdkitagawa
+ -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="./web_assets/icon/favicon.png" />
+  <title>Aegis Core Documentation</title>
+</head>
+<body>
+  <aside>
+    <nav id="navbar">
+      <img src="./web_assets/images/logo.png" class="header-image">
+      <header>CoreSE Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#CoreSE">CoreSE</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_Operator">Prefix Operator</a></li>
+        <li><a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
+        <li><a class="nav-link" href="#Variable_Scope">Variable Scope</a></li>
+        <li><a class="nav-link" href="#Prefix_Global_Variables">Prefix Global Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_AI_Variables">Prefix AI Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_Global_Constant_Variables">Prefix Global Constant Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_Local_Constant_Variables">Prefix Local Constant Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_Instance_Variables">Prefix Instance Variables</a></li>
+        <li><a class="nav-link" href="#Postfix_Data_Type_Variables">Postfix Data Type Variables</a></li>
+        <li><a class="nav-link" href="#Array_Data_Type_Variables">Array Data Type Variables</a></li>
+        <li><a class="nav-link" href="#If_and_Else_Statement">If and Else Statement</a></li>
+        <li><a class="nav-link" href="#Switch_and_Case_Statement">Switch and Case Statement</a></li>
+        <li><a class="nav-link" href="#While_Statement">While Statement</a></li>
+        <li><a class="nav-link" href="#For_Statement">For Statement</a></li>
+        <li><a class="nav-link" href="#Do_Statement">Do Statement</a></li>
+        <li><a class="nav-link" href="#Freeloop_Statement">Freeloop Statement</a></li>
+        <li><a class="nav-link" href="#Function_Declarations">Function Declarations</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <section id="Introduction"></section>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header class="header-control">Introduction</header>
+      <p><span class="code-scope">CoreSE</span> is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by <a href="https://github.com/sdkitagawa" target="_blank">Douglas Kitagawa</a>. It is a class-based concurrent scripting language and it can be integrated with <a href="https://github.com/lua/lua">Lua</a> or <span class="code-common">SQL</span>.</p>
+      <p><span class="code-scope">CoreSE</span> also contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.</p>
+      <p><span class="code-scope">CoreSE</span> supports procedural programming, object-oriented programming and functional programming. Thanks to special built-in methods, it can also be used as a prototype-based programming language.</p>
+    </section>
+    <section class="main-section" id="CoreSE">
+      <header class="header-control">CoreSE</header>
+      <p><span class="code-scope">CoreSE</span> it is also very similar in some ways to C/C++ and Lua, but fundamentally different in some other aspects. The CoreSE language resembles C/C++ and Lua but does not have C/C++'s static typing and strong type checking and it is simple and flexible as Lua. CoreSE follows most of the C/C++ expression syntax, naming conventions and basic control-flow constructs which was the reason why it was named CoreSE (because it follows a different Course).</p>
+      <p><span class="code-scope">CoreSE</span> has been developed from scratch for <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.</p>
+    </section>
+    <section class="main-section" id="Hello_World">
+      <header class="header-control">Hello World</header>
+      <p>To get started with writing <span class="code-scope">CoreSE</span>, open your IDE or scratchpad and write your first <span class="code-array-position">Hello World!</span> code using the following code:</p>
+
+      <code><span class="code-event">OnPCLoginEvent</span>:
+        <span class="code-array-position">dialog</span> <span class="code-string">"Hello World!"</span><span class="code-keyword">;</span>
+      </code>
+
+    </section>
+    <section class="main-section" id="Variables">
+      <header class="header-control">Variables</header>
+      <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+      <p>Variable names can have normal <span class="code-array-position">alpha-numeric characters</span> and can have <span class="code-array-position">numeric characters</span> and it is <span class="code-array-position">case sensitive</span>.</p>
+
+      <h1>Understanding Alpha-Numeric Characters</h1>
+      <p>When it comes to alphanumeric characters, the rule is that we can use letters including the characters from <span class="code-common">A</span> to <span class="code-common">Z</span> (which we call it <span class="code-array-position">adamantoise case</span> also known as <span class="code-array-position">upper case</span>) and the characters from <span class="code-common">a</span> to <span class="code-common">z</span> (<span class="code-array-position">moogle case</span> also known as <span class="code-array-position">lower case</span>).</p>
+
+      <h1>How to name your variables</h1>
+      <p>Here are the good practices on how to name your variables:</p>
+      <ul class="good-practices-list">
+        <li>Name your variables using Camel Case Notation (thisIscamelCase);</li>
+        <li>Use alphanumeric characters and underscore character (for special cases);</li>
+        <li>No special characters like: <span class="code-scope">@</span> , <span class="code-scope">#</span> , <span class="code-scope">$</span> , <span class="code-scope">%</span> , <span class="code-scope">!</span> .
+        <ul>
+          <li>
+            <b>Note:</b> these are special characters used for CoreSE to point Variable scoping and such);
+          </li>
+        </ul>
+        <li>Names must begin with an alphabetical letter or an underscore not a number;</li>
+        <li>Variable names are case-sensitive;</li>
+        <li>Don't use contractions or abbreviations;</li>
+        <li>Variable names should be descriptive and meaningful;</li>
+        <li>Variables can't be a keyword reserved by the programming language built-in functions or such.</li>
+      </ul>
+
+      <h1>Understanding Numeric Characters</h1>
+      <p>The rule is that we can use number digits from <span class="code-number">0</span> to <span class="code-number">9</span>. Keep reading to understand the variable naming conventions for CoreSE.</p>
+
+      <p>A <span class="code-scope">CoreSE</span> identifier must start with a letter or underscore (<span class="code-number"> _ </span>); subsequent characters can also be digits (<span class="code-number">0-9</span>). Because CoreSE is case sensitive, letters include the characters <span class="code-common">"A"</span> through <span class="code-common">"Z"</span> (uppercase) and the characters <span class="code-common">"a"</span> through <span class="code-common">"z"</span> (lowercase).</p>
+    </section>
+      <section class="main-section" id="Prefix_Operator">
+      <header class="header-control">Prefix Operator</header>
+      <p>In CoreSE Variables are dived into two types:</p>
+      <ul class="good-practices-list">
+        <li>Prefix</li>
+        <li>Postfix</li>
+      </ul>
+      <p>Prefix variables are used to define the scope and extent of a variable.</p>
+      <p>Postfix variables are used to define the type of the variable between integer (positive and negative integer numbers) or string.</p>
+    </section>
+    <section class="main-section" id="Declaring_Variables">
+      <header class="header-control">Declaring Variables</header>
+      <p>To declare a variable in <span class="code-scope">CoreSE</span> first use the keyword <span class="code-common">var</span> or <span class="code-common">set</span> following by this choose your <b>Prefix Operator</b> plus the variable name and then use the comma (optional), <b>i.e</b>:</p>
+
+      <ul class="good-practices-list">
+        <li><b>Good Practice Pattern</b>: <span class="code-common">{keyword}</span>, <span class="code-scope">{prefix operator}</span>, <span class="code-scope">{variable_name}</span>;<br /></li>
+        <li><b>Optional Pattern</b>: <span class="code-common">keyword</span>, <span class="code-scope">{prefix operator}</span>, <span class="code-scope">{variable_name}</span>;</li>
+        <li><b>Note</b>: The <span class="code-scope">$</span> before the <span class="code-scope">firstVariable</span> word it is a <a href="#Prefix_Operator">Variable Prefix Operator</a></li>
+      </ul>
+
+      <code><span class="code-common">var</span> <span class="code-scope">$firstVariable</span>;
+        <span class="code-common">var</span> <span class="code-scope">$firstVariable</span>
+        <span class="code-common">set</span> <span class="code-scope">$firstVariable</span>;
+        <span class="code-common">set</span> <span class="code-scope">$firstVariable</span>
+      </code>
+
+      <p>To initialize your variables in <span class="code-scope">CoreSE</span> you must use the equal to (<span class="code-common"> = </span>) followed by the value of your variable, <b>i.e</b>:</p>
+
+      <code><span class="code-common">set</span> <span class="code-scope">$firstVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is your first variable!"</span>;
+      </code>
+
+      <p>You can also use a comma (<span class="code-common"> , </span>) instead of the equal to operator.</p>
+
+      <code><span class="code-common">set</span> <span class="code-scope">$firstVariable$</span>, <span class="code-string">"This is your first variable!"</span>;
+      </code>
+
+      <p class="p-padding">The <span class="code-scope">$</span> before the <span class="code-scope">myVariable"</span> word it's what we call it Variable Prefix.</p>
+      <p>For example,</p>
+
+      <code><span class="code-keyword">set</span> <span class="code-scope">.@myVariable$</span> <span class="code-common">=</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">.@myVariable$</span><span class="code-common">,</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
+      </code>
+
+      <p>This syntax is used to declare global variables.</p>
+      <p>In this case the <span class="code-scope">.@</span> are the Variable Prefixes.</p>
+      <p>You can also use this way to declare a local variable:</p>
+
+      <code><span class="code-keyword">set</span> <span class="code-scope">$myVariable$</span> <span class="code-common">=</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">$myVariable$</span><span class="code-common">,</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
+      </code>
+
+      <p>By using the <span class="code-scope">.@</span> symbols you will always declare a local variable.</p>
+    </section>
+    <section class="main-section" id="Variable_Scope">
+      <header class="header-control">Variable Scope</header>
+      <p>Let's suppose you declare a variable as follows:</p>
+
+      <code><span class="code-common">set</span> <span class="code-scope">$variableName</span>;
+      </code>
+
+      <p>This is what we call it a <span class="code-scope">global variable</span> and it is called <span class="code-scope">global</span> because it is available to any other code in the current document.</p>
+      <p>Now let's change the example, let's suppose you are declaring a variable using:</p>
+
+      <code><span class="code-common">set</span> <span class="code-scope">.@variableName</span>;
+      </code>
+
+      <p>This what we call <span class="code-scope">local variable</span>, because it is available only within that specific block of code. This is important for scripts which are called with no RID attached, that is, not triggered by a specific client object.</p>
+
+    </section>
+    <section class="main-section" id="Prefix_Global_Variables">
+      <header class="header-control">Prefix Global Variables</header>
+      <p>Global variables are in fact properties of the global object. In <span class="code-scope">CoreSE</span> Script file the global object is the whole Server Side, so you can set and access global variables.</p>
+      <p>Consequently, you can access global variables declared from different Client Sides. For example, if a variable called $userName is declared in a Script, you can refer to this variable from the Server Side and Client Side.</p>
+      <p>They are stored by Zone Server in the database table <span class="code-array">mapreg</span>.</p>
+
+      <h1>How to declare a Global Variable</h1>
+      <code><span class="code-common">set</span> <span class="code-scope">$variableName</span>;
+      </code>
+
+      <p><b>Note</b>: The <span class="code-scope">$</span> before the <span class="code-scope">variableName</span> it is a <b>global variable</b>.</p>
+
+    </section>
+    <section class="main-section" id="Prefix_AI_Variables">
+      <header class="header-control">Prefix AI Variables</header>
+      <p>They exist in the Client Side only and disappear when the Server Side restarts or when the script is reloaded.</p>
+      <p>Can be accessed from inside the Client Side or by calling the function <span class="code-array">getvariableofpc</span>. Function objects can also have .variables which are accessible from inside the function, however <span class="code-array">getvariableofpc</span> does NOT work on function objects.</p>
+
+      <h1>How to declare an AI Variable</h1>
+
+      <code><span class="code-keyword">set</span> <span class="code-scope">.myVariable</span> <span class="code-common">=</span> <span class="code-number">10</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">.myVariable</span><span class="code-common">,</span> <span class="code-number">10</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">.myVariable$</span> <span class="code-common">=</span><span class="code-string">"Text"</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">.myVariable$</span><span class="code-common">,</span><span class="code-string">"Text"</span><span class="code-keyword">;</span>
+      </code>
+
+      <p><b>Note</b>: The <span class="code-common">.</span> before the <span class="code-common">variableName</span> it is an <b>AI</b>.</p>
+
+    </section>
+    <section class="main-section" id="Prefix_Global_Constant_Variables">
+      <header class="header-control">Prefix Global Constant Variables</header>
+      <p>Global variables are in fact properties of the global object. In <span class="code-scope">CoreSE</span> script file the global object is the whole Server Side, so you can set and access global variables.</p>
+      <p>Consequently, you can access global variables declared from different Client Sides. For example, if a variable called <span class="code-scope">$userName</span> is declared in a Script, you can refer to this variable from the Server Side and Client Side.</p>
+      <p>A permanent global account variable stored by the Inter Server. They are stored in the <span class="code-array">global_acc_reg_num</span> table and <span class="code-array">global_acc_reg_str</span>.</p>
+
+      <code><span class="code-keyword">set</span> <span class="code-scope">##myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">##myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">##myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">##myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+      </code>
+
+    </section>
+    <section class="main-section" id="Prefix_Local_Constant_Variables">
+      <header class="header-control">Prefix Local Constant Variables</header>
+      <p>The Local Constants are stored by Inter Server in the <span class="code-array">acc_reg_num</span> table and <span class="code-array">acc_reg_str</span>.</p>
+      <p>A permanent global account variable stored by the Inter Server. They are stored in the "global_acc_reg_num" table and "global_acc_reg_str"</p>
+
+      <code><span class="code-keyword">set</span> <span class="code-scope">#myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">#myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">#myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">#myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+      </code>
+
+      <p>The only difference you will note from normal <span class="code-scope">#</span> variables is when you have multiple Inter Servers connected to the same Zone Server. The # variables are unique to each Inter Server, while the ## variables are shared by all these Inter Servers.</p>
+    </section>
+    <section class="main-section" id="Prefix_Instance_Variables">
+      <header class="header-control">Prefix Instance Variables</header>
+      <p>These are used with the instancing system and are unique to each instance type. Can be accessed from inside the instance or by calling <span class="code-array">getinstancevar</span>.</p>
+
+      <code><span class="code-keyword">set</span> <span class="code-scope">'myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">'myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">'myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+        <span class="code-keyword">set</span> <span class="code-scope">'myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+      </code>
+
+      <p><b>Note</b>: The <span class="code-scope">#</span> before the <span class="code-scope">variableName</span> it is a <b>local constant variable</b>.</p>
+    </section>
+    <section class="main-section" id="Postfix_Data_Type_Variables">
+      <header class="header-control">Postfix Data Type Variables</header>
+      <p>As previously stated in this documentation the Postfix is always used to define whether a variable is integer (positive, negative integer number. However whole numbers only) or string.</p>
+      <p>You can check all  Pothestfix Data Types possibilities bellow:</p>
+
+          <table>
+            <caption>Variable Scope Examples</caption>
+            <thead>
+            </thead>
+            <tbody>
+              <tr class="t-description">
+                <th class="t-scope">Scope</th>
+                <th class="t-data">Data</th>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">varName</span></span></th>
+                <td>Permanent Character Side integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">varName$</span></span></th>
+                <td>Permanent Character Zone string variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">@varName</span></th>
+                <td>Temporary Character Zone integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">@varName$</span></th>
+                <td>Temporary Character Zone string variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">$varName$</span></th>
+                <td>Permanent Global string variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">$@varName</span></th>
+                <td>Temporary Global integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">$@varName$</span></th>
+                <td>Temporary Global integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">.varName</span></th>
+                <td>AI integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">.varName$</span></th>
+                <td>AI string variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">.@varName</span></th>
+                <td>Local integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">.@varName$</span></th>
+                <td>Local integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">'varName</span></th>
+                <td>Instance integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">'varName$</span></th>
+                <td>Instance string variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">#varName</span></th>
+                <td>Permanent Local Account Zone integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">#varName$</span></th>
+                <td>Permanent Local Account Zone string variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">##varName</span></th>
+                <td>Permanent Global Account Zone integer variable</td>
+              </tr>
+              <tr class="t-description">
+                <th><span class="code-scope">##varName$</span></th>
+                <td>Permanent Global Account Zone string variable</td>
+              </tr>
+            </tbody>
+          </table>
+
+      <p>You must always used the word <span class="code-common">set</span> or <span class="code-common">var</span> to define your variable, otherwise if a variable was never set, it is considered to equal zero for integer variables or an empty string (<span class="code-string">""</span>, nothing between the quotes) for string variables or an empty string (<span class="code-string">""</span>, nothing between the quotes) for string forever, and no trace remains of it even if it was stored with character or account data.</p>
+
+    </section>
+    <section class="main-section" id="Array_Data_Type_Variables">
+      <header class="header-control">Array Data Type Variables</header>
+      <p>There's not much to say about <b>Array Data Type</b> variables. These are variables capable to store multiple values in a single variable by using different indexes.</p>
+      <p>This data type will allow you to quickly fill up an array in one go.</p>
+      <p><b>Follow the pattern:</b></p>
+
+      <code><span class="code-keyword">setarray</span> <span class="code-scope">{array name}</span><span class="code-array">[ {initial position} ]</span></span> <span class="code-common">=</span> <span class="code-array-position">value, value, value, ...</span>;
+        <span class="code-keyword">setarray</span> <span class="code-scope">{array name}</span><span class="code-array">[ {initial position} ]</span></span><span class="code-common">,</span> <span class="code-array-position">value, value, value, ...</span>;
+      </code>
+
+      <p>Here's a real world sample:</p>
+
+      <code><span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span> <span class="code-array">[0]</span></span> <span class="code-common">=</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;
+        <span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span><span class="code-array">[0]</span></span><span class="code-common">,</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;
+      </code>
+
+    </section>
+    <section class="main-section" id="If_and_Else_Statement">
+      <header class="header-control">If and Else Statement</header>
+      <p>This is the basic conditional statement command, and just about the only one available in this scripting language. The condition can be any expression. All expressions resulting in a non-zero value will be considered True, including negative values. All expressions resulting in a zero are false.</p>
+      <p>If the expression results in True, the statement will be executed. If it isn't true, nothing happens and we move on to the next line of the script.</p>
+    <br />
+
+    <h1>First Example</h1>
+      <code><span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">1</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"This will always print."</span>;
+        <span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">0</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"And this will never print."</span>;
+        <span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">5</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"This will also always print."</span>;
+        <span class="code-function">if</span> <span class="code-keyword">(-<span class="code-number">1</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"Funny as it is, this will also print just fine."</span>;
+      </code>
+
+      <h1>Second Example</h1>
+      <code><span class="code-scope">.@answer</span> = <span class="code-number">1</span>;
+        <span class="code-array-position">input</span> <span class="code-scope">.@input</span>;
+        <span class="code-function">if</span> <span class="code-keyword">(</span><span class="code-scope">.@input</span> <span class="code-common">==</span> <span class="code-scope">.@answer</span><span class="code-keyword">)</span>
+        &emsp;&emsp;<span class="code-array-position">close</span><span class="code-keyword">;</span>
+        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"Sorry, your answer is incorrect."</span>;
+        <span class="code-array-position">close</span><span class="code-keyword">;</span>
+      </code>
+
+    </section>
+    <section class="main-section" id="Switch_and_Case_Statement">
+      <header class="header-control">Switch and Case Statement</header>
+      <p>The switch statement is similar to a series of if statements on the same expression. In many occasions, you may want to compare the same variable (or expression) with many different values, and execute a different piece of code depending on which value it equals to. This is exactly what the switch statement is for.</p>
+      <p>It is important to understand how the switch statement is executed in order to avoid mistakes. The switch statement executes line by line (actually, statement by statement). In the beginning, no code is executed. Only when a case statement is found with a value that matches the value of the switch expression the case statement(s) will to executed. The parser continues to execute the statements until the end of the switch block, or the first time it sees a break statement. If you don't write a break statement at the end of a case's statement list, the parser will go on executing the statements of the following case (fall-through).</p>
+      <p>Check the Example:</p>
+
+      <code><span class="code-function">switch</span>(<span class="code-function">select</span>(<span class="code-string">"Yes</span><span class="code-array-position">:</span><span class="code-string">No"</span>)) {
+        <span class="code-scope">case 1</span>:
+        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"You said yes!"</span>;
+        &emsp;&emsp;<span class="code-array-position">break</span>;
+        <span class="code-scope">case 2</span>:
+        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"Aww, why?"</span>;
+        &emsp;&emsp;<span class="code-array-position">break</span>;
+        }
+      </code>
+
+    </section>
+    <section class="main-section" id="While_Statement">
+      <header class="header-control">While Statement</header>
+      <p>This is probably the simplest and most frequently used loop structure. The 'while' statement can be interpreted as "while {condition} is true, perform {statement}".</p>
+      <p>It is a pretest loop, meaning the conditional expression is tested before any of the statements in the body of the loop are performed. If the condition evaluates to false, the statement(s) in the body of the loop is/are never executed. If the condition evaluates to true, the statement(s) are executed, then control transfers back to the conditional expression, which is reevaluated and the cycle continues.</p>
+      <p>Check the example below:</p>
+
+      <code><span class="code-function">while</span> (<span class="code-number">10</span> <span class="code-common">>=</span> <span class="code-number">1</span>)) {
+        &emsp;&emsp;<span class="code-event">doThis</span>;
+      }
+      </code>
+
+    </section>
+    <section class="main-section" id="For_Statement">
+      <header class="header-control">For Statement</header>
+      <p>Another pretest looping structure is the 'for' statement. It is considered a specialized form of the 'while' statement, and is usually associated with counter-controlled loops. Here are the steps of the 'for' statement: the initialize statement is executed first and only once. The condition test is performed. When the condition evaluates to false, the rest of the for statement is skipped. When the condition evaluates to true, the body of the loop is executed, then the update statement is executed (this usually involves incrementing a variable). Then the condition is reevaluated and the cycle continues.</p>
+
+      <h1>First Example</h1>
+      <code><span class="code-function">for</span>( <span class="code-common"><</span><span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
+      &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string"> "This line will print 5 times."</span>;
+      </code>
+
+      <h1>Second Example</h1>
+      <code><span class="code-array-position">dialog</span> <span class="code-string">"This will print the numbers 1 - 5."</span>;
+      <span class="code-function">for</span>( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
+      &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"Number: "</span> <span class="code-common">+</span> <span class="code-scope">.@i</span>;
+      </code>
+
+    </section>
+    <section class="main-section" id="Do_Statement">
+      <header class="header-control">Do Statement</header>
+      <p>The <span class="code-array">do...while</span> is the only post-test loop structure available in this script language. With a post-test, the statements are executed once before the condition is tested. When the condition is true, the statement(s) are repeated. When the condition is false, control is transferred to the statement following the 'do...while' loop expression.</p>
+
+      <h1>First Example</h1>
+      <code><span class="code-array-position">dialog</span> <span class="code-string">"This will countdown from 10 to 1."</span>;
+        <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">10</span>;
+        <span class="code-function">do</span> {
+        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-scope">.@i</span>;
+        &emsp;&emsp;<span class="code-scope">.@i</span> <span class="code-common">-=</span> <span class="code-number">1</span>;
+        } <span class="code-function">while</span> (<span class="code-scope">.@i</span> <span class="code-common">></span> <span class="code-number">0</span>);
+      </code>
+
+      <h1>Second Example</h1>
+      <code>
+      <span class="code-array-position">dialog</span> <span class="code-string">"This menu will keep appearing until you pick Cancel"</span>;
+      <span class="code-function">do</span> {
+      &emsp;&emsp;<span class="code-scope">.@menu</span> <span class="code-common">=</span> <span class="code-function">select</span>(<span class="code-string">"One</span><span class="code-array-position">:</span><span class="code-string"><span class="code-string">Two</span><span class="code-array-position">:</span><span class="code-string">Three</span><span class="code-array-position">:</span><span class="code-string">Cancel</span>");
+      } <span class="code-function">while</span> (<span class="code-scope">.@menu</span> <span class="code-common">!=</span> <span class="code-number">4</span>);
+        </code>
+    </section>
+    <section class="main-section" id="Freeloop_Statement">
+      <header>Freeloop Statement</header>
+      <p>Toggling this to enabled (1) allows the script instance to bypass the infinite loop protection, allowing your script to loop as much as it may need. Disabling (0) will warn you if an infinite loop is detected.</p>
+      <p>The command will return the state of freeloop for the attached script, even if no argument is provided.</p>
+      <code><span class="code-scope">freeloop</span>(<span class="code-number">1</span>); <span class="code-comment">// Enable script to loop freely</span>
+        
+        <span class="code-comment">// Be careful with what you do here</span>
+        <span class="code-function">for</span> ( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">0</span>; <span class="code-scope">.@i</span> <span class="code-common"><</span> <span class="code-scope">.@bigloop</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
+        &emsp;&emsp;<span class="code-event">doThis</span>;
+        
+        <span class="code-comment">// Will sleep the script for 1ms when detect an infinity loop to
+        // Let AEGIS do what it needs to do (socket, timer, process, etc.)</span>
+	      }
+
+        <span class="code-function">freeloop</span>(<span class="code-number">0</span>); <span class="code-comment">// Disable freeloop</span>
+
+        <span class="code-function">for</span> ( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">0</span>; <span class="code-scope">.@i</span> <span class="code-common"><</span> <span class="code-scope">.@bigloop</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
+        &emsp;&emsp;<span class="code-event">doThis</span>;
+        <span class="code-comment">// Throw an infinity loop error</span>
+        }
+      </code>
+    </section>
+    <section class="main-section" id="Function_Declarations">
+      <header>Function Declarations</header>
+      <ol>
+        <li>Declare the function.</li>
+        <li>Call the function anywhere within the script. It can also return a value when used with parentheses.</li>
+        <li>Define the function within the script.</li>
+      </ol>
+      <code><span class="code-function">function</span>	<span class="code-script">script</span>	try	{
+      &emsp;&emsp;<span class="code-event">doThat</span>;
+      }
+
+      -	<span class="code-script">script</span>	testing_function	-1,{
+      &emsp;&emsp;<span class="code-scope">.@try</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"It is a function"</span>); <span class="code-comment">// 1</span>
+      &emsp;&emsp;<span class="code-scope">.@not</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"Not a function"</span>); <span class="code-comment">// 0</span>
+      }
+      </code>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

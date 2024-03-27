@@ -1,0 +1,270 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+html {
+    color-scheme: dark;
+}
+
+body {
+    min-width: 300px;
+    color: #e8e6e3;
+    background-color: #181a1b;
+    font-family: Roboto, "Open Sans", Arial, "Times New Roman", sans-serif;
+}
+
+header {
+    color: #e8e6e3;
+    margin: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 16px;
+    padding-top: 18px;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    color: #62ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #62ffdf;
+}
+
+a:visited {
+    color: #62b8ff;
+}
+
+section li {
+    margin: 10px 0px 0px 8px;
+}
+
+code {
+    color: #c8c3bc;
+    margin: 30px;
+    padding: 18px;
+    line-height: 2;
+    display: block;
+    text-align: left;
+    position: relative;
+    white-space: pre-line;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Consolas;
+    background-color: #1d1f20;
+}
+
+caption {
+    color: #e8e6e3;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+table {
+    width: 30%;
+    margin-left: 25%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    background: #1d1f20;
+    font-family: Consolas;
+}
+
+.header-image {
+    margin-top: 36px;
+    margin-left: 96px;
+    margin-bottom: 2px;
+    width: 100px;
+}
+
+.header-control {
+    font-size: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.p-padding {
+    padding-top: 20px;
+}
+
+.good-practices-list > li {
+    font-size: 15px;
+    padding-top: 15px;
+    list-style-type: square;
+}
+
+.code-keyword {
+    color: #c8c3bc;
+}
+
+.code-string {
+    color: #988f81;
+}
+
+.code-number {
+    color: #ff61b9;
+}
+
+.code-common {
+    color: #af8c6a;
+}
+
+.code-array {
+    color: #98f161;
+}
+
+.code-array-position {
+    color: #cadc35;
+}
+
+.code-scope {
+    color: #55ccff;
+}
+
+.code-event {
+    color: #4ec9b0;
+}
+
+.code-function {
+    color: #df5571;
+}
+
+.code-comment {
+    color: #41ac91;
+}
+
+.code-script {
+    color: #b6ff3d;
+}
+
+.t-scope {
+    padding: 10px 0px 10px 0px;
+}
+
+.t-data {
+    padding: 10px 0px 10px 0px;
+}
+
+.t-scope td {
+    padding: 10px 0px 10px 0px;
+}
+
+.t-description {
+    text-align: center;
+}
+
+#navbar {
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    min-width: 300px;
+    font-size: 15px;
+    background-color: #1d1f20;
+    border-right: 1px solid #27292a;
+}
+
+#navbar ul {
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    width: 100%;
+    color: #ffffff;
+    list-style: none;
+    position: relative;
+}
+
+#navbar a {
+    color: #b7b1a8;
+    display: block;
+    cursor: pointer;
+    padding: 14px 12px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: #29a1f1;
+    text-decoration: underline;
+}
+
+#main-doc {
+    padding: 35px;
+    position: absolute;
+    margin-left: 325px;
+    margin-bottom: 110px;
+}
+
+#main-doc header {
+    margin: 0px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 815px) {
+    .header-image {
+        width: 42px;
+        margin-top: 16px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+    #navbar ul {
+        height: 206px;
+        border: 1px solid;
+    }
+
+    #navbar {
+        top: 0;
+        margin: 0;
+        color: #7f7668;
+        width: 100%;
+        z-index: 1;
+        padding: 0;
+        border: none;
+        position: absolute;
+        max-height: 278px;
+        background-color: #17191a;
+        border-bottom: 1px solid #27292a;
+    }
+
+    #navbar li {
+        margin-bottom: 1px;
+        padding-top: 2px;
+        padding-left: 10px;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 248px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+
+    #main-doc {
+      margin-left: -20px;
+    }
+}
