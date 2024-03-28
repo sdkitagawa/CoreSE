@@ -9,16 +9,16 @@
 <ul>
 	<li><a href="./hello_world.md">Hello World</a></li>
 	<li><a href="./variables.md">Variables</a></li>
-	<li><a href="./declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
+	<li><a href="./declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
-	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
-	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
-	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
-	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
-	<li><a href="./postfix_data_type_variables.md">Postfix Data Type Variables</a></li>
-	<li><a href="./array_data_type_variables.md">Array Data Type Variables</a></li>
+	<li><a href="./global_prefix.md">Global Prefix</a></li>
+	<li><a href="./ai_prefix.md">AI Prefix</a></li>
+	<li><a href="./global_prefix_constants.md">Global Prefix Constants</a></li>
+	<li><a href="./local_prefix_constants.md">Local Prefix Constants</a></li>
+	<li><a href="./instance_prefix.md">Instance Prefix</a></li>
+	<li><a href="./data_type_postfix.md">Data Type Postfix</a></li>
+	<li><a href="./array_data_type.md">Array Data Type</a></li>
 	<li><a href="./if_and_else_statement.md">If & Else Statement</a></li>
 	<li><a href="./switch_and_case_statement.md">Switch & Case Statement</a></li>
 	<li><a href="./while_statement.md">While Statement</a></li>
@@ -30,7 +30,7 @@
 </details>
 <br />
 
-# Postfix Data Type Variables
+# Data Type Postfix
 As previously stated in this documentation the `Postfix` is always used to define whether a variable is **integer** (**positive** and **negative**, however whole numbers only) or **string**.
 
 You can check all the **Postfix Data Types** possibilities bellow:

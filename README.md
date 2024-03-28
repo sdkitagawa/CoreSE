@@ -19,16 +19,16 @@
 <ul>
 	<li><a href="documentation/hello_world.md">Hello World</a></li>
 	<li><a href="documentation/variables.md">Variables</a></li>
-	<li><a href="documentation/declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="documentation/prefix_operator.md">Prefix Operator</a></li>
+	<li><a href="documentation/declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="documentation/variable_scope.md">Variable Scope</a></li>
-	<li><a href="documentation/prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="documentation/prefix_ai_variables.md">Prefix AI Variables</a></li>
-	<li><a href="documentation/prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
-	<li><a href="documentation/prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
-	<li><a href="documentation/prefix_instance_variables.md">Prefix Instance Variables</a></li>
-	<li><a href="documentation/postfix_data_type_variables.md">Postfix Data Type Variables</a></li>
-	<li><a href="documentation/array_data_type_variables.md">Array Data Type Variables</a></li>
+	<li><a href="documentation/global_prefix.md">Global Prefix</a></li>
+	<li><a href="documentation/ai_prefix.md">AI Prefix</a></li>
+	<li><a href="documentation/global_prefix_constants.md">Global Prefix Constants</a></li>
+	<li><a href="documentation/local_prefix_constants.md">Local Prefix Constants</a></li>
+	<li><a href="documentation/instance_prefix.md">Instance Prefix</a></li>
+	<li><a href="documentation/data_type_postfix.md">Data Type Postfix</a></li>
+	<li><a href="documentation/array_data_type.md">Array Data Type</a></li>
 	<li><a href="documentation/if_and_else_statement.md">If & Else Statement</a></li>
 	<li><a href="documentation/switch_and_case_statement.md">Switch & Case Statement</a></li>
 	<li><a href="documentation/while_statement.md">While Statement</a></li>

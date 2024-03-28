@@ -9,16 +9,16 @@
 <ul>
 	<li><a href="./hello_world.md">Hello World</a></li>
 	<li><a href="./variables.md">Variables</a></li>
-	<li><a href="./declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
+	<li><a href="./declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
-	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
-	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
-	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
-	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
-	<li><a href="./postfix_data_type_variables.md">Postfix Data Type Variables</a></li>
-	<li><a href="./array_data_type_variables.md">Array Data Type Variables</a></li>
+	<li><a href="./global_prefix.md">Global Prefix</a></li>
+	<li><a href="./ai_prefix.md">AI Prefix</a></li>
+	<li><a href="./global_prefix_constants.md">Global Prefix Constants</a></li>
+	<li><a href="./local_prefix_constants.md">Local Prefix Constants</a></li>
+	<li><a href="./instance_prefix.md">Instance Prefix</a></li>
+	<li><a href="./data_type_postfix.md">Data Type Postfix</a></li>
+	<li><a href="./array_data_type.md">Array Data Type</a></li>
 	<li><a href="./if_and_else_statement.md">If & Else Statement</a></li>
 	<li><a href="./switch_and_case_statement.md">Switch & Case Statement</a></li>
 	<li><a href="./while_statement.md">While Statement</a></li>
@@ -30,18 +30,18 @@
 </details>
 <br />
 
-# Prefix Global Variables
-**Global variables** are in fact properties of the `global object`. In a CoreSE script file the `global object` is the whole **Server Side**, so you can set and access global variables.
+# Array Data Type
+There's not much to say about **Array Data Type** variables. These are variables capable to store multiple values in a single variable by using different indexes.
 
-Consequently, you can access global variables declared from different **Client Sides**. For example, if a variable called a variable `$userName` declared in a Script, you can refer to this variable from the **Server Side** and **Client Side**.
+This data type will allow you to quickly fill up an array in one go.
 
-They are stored by Zone Server in the database table `zone_reg` or `mapreg`.
+**Follow the pattern**: `setarray <prefix operator> <array name>[<initial index>] = <value 1>, <value 2>, <value 3>, ...;`
 
-# How to declare a Global Variable
-Here is how to declare `global variables`:
+# How to declare an Array Variable
+Here is how to declare `array variables`:
 
-```cs
-set $variableName;
+```cpp
+setarray .@myArray[0] = 200, 300, 150;
+setarray .@myArray[0], 200, 300, 150;
 ```
 
-**Note**: The `$` before the `variableName` it is a **global variable**.

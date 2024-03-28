@@ -9,16 +9,16 @@
 <ul>
 	<li><a href="./hello_world.md">Hello World</a></li>
 	<li><a href="./variables.md">Variables</a></li>
-	<li><a href="./declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
+	<li><a href="./declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
-	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
-	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
-	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
-	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
-	<li><a href="./postfix_data_type_variables.md">Postfix Data Type Variables</a></li>
-	<li><a href="./array_data_type_variables.md">Array Data Type Variables</a></li>
+	<li><a href="./global_prefix.md">Global Prefix</a></li>
+	<li><a href="./ai_prefix.md">AI Prefix</a></li>
+	<li><a href="./global_prefix_constants.md">Global Prefix Constants</a></li>
+	<li><a href="./local_prefix_constants.md">Local Prefix Constants</a></li>
+	<li><a href="./instance_prefix.md">Instance Prefix</a></li>
+	<li><a href="./data_type_postfix.md">Data Type Postfix</a></li>
+	<li><a href="./array_data_type.md">Array Data Type</a></li>
 	<li><a href="./if_and_else_statement.md">If & Else Statement</a></li>
 	<li><a href="./switch_and_case_statement.md">Switch & Case Statement</a></li>
 	<li><a href="./while_statement.md">While Statement</a></li>
@@ -30,11 +30,11 @@
 </details>
 <br />
 
-# Variable Prefix Operator
+# Prefix Operator
 In **CoreSE** Variables are dived into two types:
-- Variable Prefix Operator
-- Variable Postfix Operator
+- Prefix Operator
+- Postfix Operator
 
-Variable `Prefix` is used to define the scope and extent of a variable.
+`Prefix` is used to define the scope and extent of a variable.
 
-Variable `Postfix` is used to define the type of a variable are used to define the type of a variable between integer (positive and negative integer numbers) or string.
+`Postfix` is used to define the type of a variable are used to define the type of a variable between integer (positive and negative integer numbers) or string.

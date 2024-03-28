@@ -9,16 +9,16 @@
 <ul>
 	<li><a href="./hello_world.md">Hello World</a></li>
 	<li><a href="./variables.md">Variables</a></li>
-	<li><a href="./declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="./prefix_operator.md">Prefix Operator</a></li>
+	<li><a href="./declaring_variables.md">Declaring Variables</a></li>
 	<li><a href="./variable_scope.md">Variable Scope</a></li>
-	<li><a href="./prefix_global_variables.md">Prefix Global Variables</a></li>
-	<li><a href="./prefix_ai_variables.md">Prefix AI Variables</a></li>
-	<li><a href="./prefix_global_constant_variables.md">Prefix Global Constant Variables</a></li>
-	<li><a href="./prefix_local_constant_variables.md">Prefix Local Constant Variables</a></li>
-	<li><a href="./prefix_instance_variables.md">Prefix Instance Variables</a></li>
-	<li><a href="./postfix_data_type_variables.md">Postfix Data Type Variables</a></li>
-	<li><a href="./array_data_type_variables.md">Array Data Type Variables</a></li>
+	<li><a href="./global_prefix.md">Global Prefix</a></li>
+	<li><a href="./ai_prefix.md">AI Prefix</a></li>
+	<li><a href="./global_prefix_constants.md">Global Prefix Constants</a></li>
+	<li><a href="./local_prefix_constants.md">Local Prefix Constants</a></li>
+	<li><a href="./instance_prefix.md">Instance Prefix</a></li>
+	<li><a href="./data_type_postfix.md">Data Type Postfix</a></li>
+	<li><a href="./array_data_type.md">Array Data Type</a></li>
 	<li><a href="./if_and_else_statement.md">If & Else Statement</a></li>
 	<li><a href="./switch_and_case_statement.md">Switch & Case Statement</a></li>
 	<li><a href="./while_statement.md">While Statement</a></li>
@@ -30,19 +30,23 @@
 </details>
 <br />
 
-# Prefix AI Variables
-**Prefix AI Variables** exist in the **Client Side** only and disappear when the **Server Side** restarts or when the script is reloaded.
+# Global Prefix Constants
+**Global Prefix Constants** are in fact properties of the `global object`. In a CoreSE script file the `global object` is the whole **Server Side**, so you can set and access global variables.
 
-Can be accessed from inside of the **Client Side** or by calling the function `getvariableofpc`. Function objects can also have `.variables` which are accessible from inside the function, however `getvariableofpc` does NOT work on function objects.
+Consequently, you can access global variables declared from different **Client Sides**. For example, if a variable called a variable `#userName` declared in a Script, you can refer to this variable from the **Server Side** and **Client Side**.
 
-# How to declare a AI Variable
-Here is how to declare `AI variables`:
+A permanent `global account variable` stored by the Inter Server. They are stored in the `global_acc_reg_num` and `global_acc_reg_str` tables.
+
+The only difference you will note from normal `#` (**global constant variable**) is that when you have multiple **Inter Servers** connected to the same **Zone Server**. The `#` (**global constant variables**) are unique to each **Inter Server**, while the `##` (**local constant variables**) are shared by all these **Inter Servers**.
+
+# How to declare a Global Constant Variable
+Here is how to declare `global constant variables`:
 
 ```cs
-set .variableName = 10;
-set .variableName, 10;
-set .variableName$ = "Text";
-set .variableName$, "Text";
+set ##variableName = 10;
+set ##variableName, 10;
+set ##variableName$ = "Text";
+set ##variableName$, "Text";
 ```
 
-**Note**: The `.` before the `variableName` it is an **AI**.
+**Note**: The `##` before the `variableName` it is a **global constant variable**.
