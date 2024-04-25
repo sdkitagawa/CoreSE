@@ -14,6 +14,8 @@
 
 **CoreSE** has been developed from scratch for <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.
 
+You can check more about this programming language down below or clicking [here](https://sdkitagawa.github.io/CoreSE).
+
 <details>
 
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
