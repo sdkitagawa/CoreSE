@@ -1,6 +1,8 @@
 <p align="center" >
+<br /> <br />
 <a href="https://sdkitagawa.github.io/CoreSE/" target="_blank"><img src="https://raw.githubusercontent.com/sdkitagawa/corese/main/assets/images/logo.png" height="120px" alt="CoreSE Programming Language logo with 3 squares stacked diagonally in a counterclockwise direction each in a different color. The first is in white, the second is in azure and the third in a dark blue tone almost turning purple. And at the top of the 3 stacked squares there is the logo of the CoreSE programming language (which is pronounced Direction Course and Bearing) which are two letters C facing each other forming an infinity symbol and making a course. Each letter C has two different colors. In the letter C on the left at the top we have the dark blue tone and the azure tone at the bottom, while in the letter C on the right we have the opposite." title="CoresE Programming Language"></a>
 </p>
+<br />
 
 **CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
 
@@ -13,7 +15,6 @@
 **CoreSE** has been developed from scratch for <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.
 
 <details>
-
 
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
 <ul>
