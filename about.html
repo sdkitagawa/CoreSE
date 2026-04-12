@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+  Credits for the first Template Idea: freeCodeCamp.org
+  Credits for the content, styling, logo, icon, favicon, accessibility and additional content: sdkitagawa
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1d1f20" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="./assets/icon/favicon.png" />
+  <title>CoreSE - About</title>
+</head>
+<body class="about-page">
+  <input class="hamburger-menu" id="hamburger-toggle" type="checkbox">
+  <nav class="navbar">
+    <div class="navbar-left">
+      <label class="hamburger-label" for="hamburger-toggle">
+        <div class="toggle">
+          <span class="top-line common"></span>
+          <span class="middle-line common"></span>
+          <span class="bottom-line common"></span>
+        </div>
+      </label>
+      <a class="navbar-brand" href="/">
+        <img src="./assets/images/logo.png" class="navbar-logo" alt="CoreSE Logo">
+        <span class="navbar-title">CoreSE</span>
+      </a>
+    </div>
+    <div class="navbar-center">
+      <a class="navbar-link" href="index.html">Documentation</a>
+      <a class="navbar-link" href="about.html">About</a>
+    </div>
+    <div class="navbar-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor" d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/>
+        </svg>
+      </button>
+      <a class="github-link" href="https://github.com/sdkitagawa/corese" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor" d="M12,0.297c-6.63,0-12,5.373-12,12c0,5.303,3.438,9.8,8.205,11.385c0.6,0.113,0.82-0.258,0.82-0.577c0-0.285-0.01-1.04-0.015-2.04c-3.338,0.72-4.042-1.61-4.042-1.61C4.422,18.07,3.633,17.7,3.633,17.7c-1.087-0.744,0.084-0.729,0.084-0.729c1.205,0.084,1.838,1.236,1.838,1.236c1.07,1.835,2.809,1.305,3.495,0.998c0.108-0.776,0.417-1.305,0.76-1.605c-2.665-0.3-5.466-1.332-5.466-5.93c0-1.31,0.465-2.38,1.235-3.22c-0.135-0.303-0.54-1.523,0.105-3.176c0,0,1.005-0.322,3.3,1.23c0.96-0.267,1.983-0.399,3.003-0.404c1.02,0.005,2.047,0.137,3.006,0.404c2.291-1.552,3.297-1.23,3.297-1.23c0.645,1.653,0.24,2.873,0.12,3.176c0.765,0.84,1.23,1.91,1.23,3.22c0,4.61-2.805,5.625-5.475,5.92c0.42,0.36,0.81,1.096,0.81,2.22c0,1.606-0.015,2.896-0.015,3.286c0,0.315,0.21,0.696,0.825,0.57c4.765-1.589,8.2-6.085,8.2-11.385c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <div class="sidebar">
+    <aside>
+      <nav id="navbar">
+        <header class="sidebar-header">CoreSE Documentation</header>
+          <ul>
+              <li class="mobile-only"><a class="nav-link" href="index.html" aria-label="Documentation page">Documentation</a></li>
+              <li class="mobile-only"><a class="nav-link" href="about.html" aria-label="About page">About</a></li>
+              <li><a class="nav-link" href="index.html#Introduction" aria-label="Introduction section">Introduction</a></li>
+              <li><a class="nav-link" href="index.html#Hello_World" aria-label="Hello World section">Hello World</a></li>
+              <li><a class="nav-link" href="index.html#Variables" aria-label="Variables section">Variables</a></li>
+              <li><a class="nav-link" href="index.html#Prefix_Operator" aria-label="Prefix Operators section">Prefix Operator</a></li>
+              <li><a class="nav-link" href="index.html#Declaring_Variables" aria-label="Variable Declaration section">Declaring Variables</a></li>
+              <li><a class="nav-link" href="index.html#Variable_Scope" aria-label="Variable Scope section">Variable Scope</a></li>
+              <li><a class="nav-link" href="index.html#Global_Prefix" aria-label="Global Prefixes section">Global Prefix</a></li>
+              <li><a class="nav-link" href="index.html#AI_Prefix" aria-label="AI Prefix section">AI Prefix</a></li>
+              <li><a class="nav-link" href="index.html#Global_Prefix_Constants" aria-label="Global Prefix Constants section">Global Prefix Constants</a></li>
+              <li><a class="nav-link" href="index.html#Local_Prefix_Constants" aria-label="Local Prefix Constants section">Local Prefix Constants</a></li>
+              <li><a class="nav-link" href="index.html#Instance_Prefix" aria-label="Instance Prefix section">Instance Prefix</a></li>
+              <li><a class="nav-link" href="index.html#Data_Type_Postfix" aria-label="Data Type Postfix section">Data Type Postfix</a></li>
+              <li><a class="nav-link" href="index.html#Array_Data_Type" aria-label="Array Data Type section">Array Data Type</a></li>
+              <li><a class="nav-link" href="index.html#If_and_Else_Statement" aria-label="If and Else section">If and Else Statement</a></li>
+              <li><a class="nav-link" href="index.html#Switch_and_Case_Statement" aria-label="Switch and Case section">Switch and Case Statement</a></li>
+              <li><a class="nav-link" href="index.html#While_Statement" aria-label="While Statement section">While Statement</a></li>
+              <li><a class="nav-link" href="index.html#For_Statement" aria-label="For Statement section">For Statement</a></li>
+              <li><a class="nav-link" href="index.html#Do_Statement" aria-label="Do Statement section">Do Statement</a></li>
+              <li><a class="nav-link" href="index.html#Freeloop_Statement" aria-label="Freeloop Statement section">Freeloop Statement</a></li>
+              <li><a class="nav-link" href="index.html#Function_Declarations" aria-label="Function Declarations section">Function Declarations</a></li>
+          </ul>
+      </nav>
+    </aside>
+  </div>
+  <main id="main-doc" class="about-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <ul>
+        <li class="arrow_character_item"><a href="index.html" class="breadcrumb-home" aria-label="Home page"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"/></svg></a></li>
+        <li class="arrow_character_item"><span>About</span></li>
+      </ul>
+    </nav>
+    <section class="main-section" id="About">
+      <header class="header-control">About</header>
+      
+      <h2 id="why">Why?</h2>
+      <p><span class="code-scope">CoreSE</span> is very similar in some ways to C/C++ and Lua, but fundamentally different in some other aspects. The CoreSE language resembles C/C++ and Lua but does not have C/C++'s static typing and strong type checking and it is simple and flexible as Lua. CoreSE follows most of the C/C++ expression syntax, naming conventions and basic control-flow constructs which was the reason why it was named CoreSE (because it follows a different Course).</p>
+      <p><span class="code-scope">CoreSE</span> has been developed from scratch for <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.</p>
+
+      <h2 id="other-projects">Other Projects</h2>
+      <p>Here are some projects that are directly related to CoreSE and similar scripting languages:</p>
+      <ul class="good-practices-list">
+        <li><a href="https://github.com/sdkitagawa/corese" target="_blank" rel="noopener">CoreSE</a> - The main project</li>
+        <li><a href="https://github.com/lua/lua" target="_blank" rel="noopener">Lua</a> - The language CoreSE integrates with Lua</li>
+      </ul>
+
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
