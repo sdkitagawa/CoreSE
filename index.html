@@ -2,78 +2,113 @@
 <!--
   Credits for the first Template Idea: freeCodeCamp.org
   Credits for the content, styling, logo, icon, favicon, accessibility and additional content: sdkitagawa
- -->
+-->
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1d1f20" />
+  <link rel="stylesheet" href="css/prism.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" href="./assets/icon/favicon.png" />
   <title>CoreSE Documentation</title>
 </head>
 <body>
-  <label>
-    <!-- This Hamburger menu could be better with JavaScript -->
-    <input class="hamburger-menu" type="checkbox">
-    <div class="toggle">
-      <span class="top-line common"></span>
-      <span class="middle-line common"></span>
-      <span class="bottom-line common"></span>
+  <input class="hamburger-menu" id="hamburger-toggle" type="checkbox">
+  <nav class="navbar">
+    <div class="navbar-left">
+      <label class="hamburger-label" for="hamburger-toggle">
+        <div class="toggle">
+          <span class="top-line common"></span>
+          <span class="middle-line common"></span>
+          <span class="bottom-line common"></span>
+        </div>
+      </label>
+      <a class="navbar-brand" href="/">
+        <img src="./assets/images/logo.png" class="navbar-logo" alt="CoreSE Logo">
+        <span class="navbar-title">CoreSE</span>
+      </a>
     </div>
-  <div class="slide">
+    <div class="navbar-center">
+      <a class="navbar-link" href="index.html">Documentation</a>
+      <a class="navbar-link" href="about.html">About</a>
+    </div>
+    <div class="navbar-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor" d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/>
+        </svg>
+      </button>
+      <a class="github-link" href="https://github.com/sdkitagawa/corese" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor" d="M12,0.297c-6.63,0-12,5.373-12,12c0,5.303,3.438,9.8,8.205,11.385c0.6,0.113,0.82-0.258,0.82-0.577c0-0.285-0.01-1.04-0.015-2.04c-3.338,0.72-4.042-1.61-4.042-1.61C4.422,18.07,3.633,17.7,3.633,17.7c-1.087-0.744,0.084-0.729,0.084-0.729c1.205,0.084,1.838,1.236,1.838,1.236c1.07,1.835,2.809,1.305,3.495,0.998c0.108-0.776,0.417-1.305,0.76-1.605c-2.665-0.3-5.466-1.332-5.466-5.93c0-1.31,0.465-2.38,1.235-3.22c-0.135-0.303-0.54-1.523,0.105-3.176c0,0,1.005-0.322,3.3,1.23c0.96-0.267,1.983-0.399,3.003-0.404c1.02,0.005,2.047,0.137,3.006,0.404c2.291-1.552,3.297-1.23,3.297-1.23c0.645,1.653,0.24,2.873,0.12,3.176c0.765,0.84,1.23,1.91,1.23,3.22c0,4.61-2.805,5.625-5.475,5.92c0.42,0.36,0.81,1.096,0.81,2.22c0,1.606-0.015,2.896-0.015,3.286c0,0.315,0.21,0.696,0.825,0.57c4.765-1.589,8.2-6.085,8.2-11.385c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <div class="sidebar">
     <aside>
       <nav id="navbar">
-        <img src="./assets/images/logo.png" class="header-image" alt="CoreSE Programming Language logo with 3 squares stacked diagonally in a counterclockwise direction each in a different color. The first is in white, the second is in azure and the third in a dark blue tone almost turning purple. And at the top of the 3 stacked squares there is the logo of the CoreSE programming language (which is pronounced Direction Course and Bearing) which are two letters C facing each other forming an infinity symbol and making a course. Each letter C has two different colors. In the letter C on the left at the top we have the dark blue tone and the azure tone at the bottom, while in the letter C on the right we have the opposite." title="CoreSE Programming Language">
-        <header class="top-header">CoreSE Documentation</header>
+        <header class="sidebar-header">CoreSE Documentation</header>
           <ul>
-              <li><a class="nav-link" href="#Introduction" aria-label="Introduction section" accesskey="1">Introduction</a></li>
-              <li><a class="nav-link" href="#CoreSE" aria-label="CoreSE Information section" accesskey="2">CoreSE</a></li>
-              <li><a class="nav-link" href="#Hello_World" aria-label="How to Hello World section" accesskey="3">Hello World</a></li>
-              <li><a class="nav-link" href="#Variables" aria-label="Variables section" accesskey="4">Variables</a></li>
-              <li><a class="nav-link" href="#Prefix_Operator" aria-label="Prefix Operators section" accesskey="5">Prefix Operator</a></li>
-              <li><a class="nav-link" href="#Declaring_Variables" aria-label="Variable Declaration section" accesskey="6">Declaring Variables</a></li>
-              <li><a class="nav-link" href="#Variable_Scope" aria-label="Variable Scope section" accesskey="7">Variable Scope</a></li>
-              <li><a class="nav-link" href="#Global_Prefix" aria-label="Global Prefixes section" accesskey="8">Global Prefix</a></li>
-              <li><a class="nav-link" href="#AI_Prefix" accesskey="9">AI Prefix</a></li>
-              <li><a class="nav-link" href="#Global_Prefix_Constants" accesskey="0">Global Prefix Constants</a></li>
-              <li><a class="nav-link" href="#Local_Prefix_Constants" accesskey="-">Local Prefix Constants</a></li>
-              <li><a class="nav-link" href="#Instance_Prefix" accesskey="=">Instance Prefix</a></li>
-              <li><a class="nav-link" href="#Data_Type_Postfix" accesskey="q">Data Type Postfix</a></li>
-              <li><a class="nav-link" href="#Array_Data_Type" accesskey="a">Array Data Type</a></li>
-              <li><a class="nav-link" href="#If_and_Else_Statement" accesskey="z">If and Else Statement</a></li>
-              <li><a class="nav-link" href="#Switch_and_Case_Statement" accesskey="t">Switch and Case Statement</a></li>
-              <li><a class="nav-link" href="#While_Statement" accesskey="g">While Statement</a></li>
-              <li><a class="nav-link" href="#For_Statement" accesskey="y">For Statement</a></li>
-              <li><a class="nav-link" href="#Do_Statement" accesskey="h">Do Statement</a></li>
-              <li><a class="nav-link" href="#Freeloop_Statement" accesskey="u">Freeloop Statement</a></li>
-              <li><a class="nav-link" href="#Function_Declarations" accesskey="j">Function Declarations</a></li>
+              <li class="mobile-only"><a class="nav-link" href="index.html" aria-label="Documentation page">Documentation</a></li>
+              <li class="mobile-only"><a class="nav-link" href="about.html" aria-label="About page">About</a></li>
+              <li><a class="nav-link" href="#Introduction" aria-label="Introduction section">Introduction</a></li>
+              <li><a class="nav-link" href="#Hello_World" aria-label="Hello World section">Hello World</a></li>
+              <li><a class="nav-link" href="#Variables" aria-label="Variables section">Variables</a></li>
+              <li><a class="nav-link" href="#Prefix_Operator" aria-label="Prefix Operators section">Prefix Operator</a></li>
+              <li><a class="nav-link" href="#Declaring_Variables" aria-label="Variable Declaration section">Declaring Variables</a></li>
+              <li><a class="nav-link" href="#Variable_Scope" aria-label="Variable Scope section">Variable Scope</a></li>
+              <li><a class="nav-link" href="#Global_Prefix" aria-label="Global Prefixes section">Global Prefix</a></li>
+              <li><a class="nav-link" href="#AI_Prefix" aria-label="AI Prefix section">AI Prefix</a></li>
+              <li><a class="nav-link" href="#Global_Prefix_Constants" aria-label="Global Prefix Constants section">Global Prefix Constants</a></li>
+              <li><a class="nav-link" href="#Local_Prefix_Constants" aria-label="Local Prefix Constants section">Local Prefix Constants</a></li>
+              <li><a class="nav-link" href="#Instance_Prefix" aria-label="Instance Prefix section">Instance Prefix</a></li>
+              <li><a class="nav-link" href="#Data_Type_Postfix" aria-label="Data Type Postfix section">Data Type Postfix</a></li>
+              <li><a class="nav-link" href="#Array_Data_Type" aria-label="Array Data Type section">Array Data Type</a></li>
+              <li><a class="nav-link" href="#If_and_Else_Statement" aria-label="If and Else section">If and Else Statement</a></li>
+              <li><a class="nav-link" href="#Switch_and_Case_Statement" aria-label="Switch and Case section">Switch and Case Statement</a></li>
+              <li><a class="nav-link" href="#While_Statement" aria-label="While Statement section">While Statement</a></li>
+              <li><a class="nav-link" href="#For_Statement" aria-label="For Statement section">For Statement</a></li>
+              <li><a class="nav-link" href="#Do_Statement" aria-label="Do Statement section">Do Statement</a></li>
+              <li><a class="nav-link" href="#Freeloop_Statement" aria-label="Freeloop Statement section">Freeloop Statement</a></li>
+              <li><a class="nav-link" href="#Function_Declarations" aria-label="Function Declarations section">Function Declarations</a></li>
           </ul>
       </nav>
     </aside>
   </div>
-  </label>
   <section id="Introduction"></section>
   <main id="main-doc">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <ul>
+        <li class="arrow_character_item"><a href="index.html" class="breadcrumb-home" aria-label="Home page"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"/></svg></a></li>
+        <li class="arrow_character_item"><span>Welcome to CoreSE!</span></li>
+      </ul>
+    </nav>
     <section class="main-section" id="Introduction">
       <header class="header-control">Introduction</header>
       <p class="paragraph-padding"><span class="code-scope">CoreSE</span> is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by <a href="https://github.com/sdkitagawa" target="_blank">Douglas Kitagawa</a>. It is a class-based concurrent scripting language and it can be integrated with <a href="https://github.com/lua/lua">Lua</a> or <span class="code-common">SQL</span>.</p>
       <p class="paragraph-padding"><span class="code-scope">CoreSE</span> also contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.</p>
       <p><span class="code-scope">CoreSE</span> supports procedural programming, object-oriented programming and functional programming. Thanks to special built-in methods, it can also be used as a prototype-based programming language.</p>
     </section>
-    <section class="main-section section-padding" id="CoreSE">
-      <header class="header-control">CoreSE</header>
-      <p><span class="code-scope">CoreSE</span> it is also very similar in some ways to C/C++ and Lua, but fundamentally different in some other aspects. The CoreSE language resembles C/C++ and Lua but does not have C/C++'s static typing and strong type checking and it is simple and flexible as Lua. CoreSE follows most of the C/C++ expression syntax, naming conventions and basic control-flow constructs which was the reason why it was named CoreSE (because it follows a different Course).</p>
-      <p><span class="code-scope">CoreSE</span> has been developed from scratch for <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.</p>
-    </section>
     <section class="main-section section-padding" id="Hello_World">
       <header class="header-control">Hello World</header>
       <p>To get started with writing <span class="code-scope">CoreSE</span>, open your IDE or scratchpad and write your first <span class="code-array-position">Hello World!</span> code using the following code:</p>
 
-      <code><span class="code-event">OnPCLoginEvent</span>:
-        <span class="code-array-position">dialog</span> <span class="code-string">"Hello World!"</span><span class="code-keyword">;</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-event">OnPCLoginEvent</span>:
+  <span class="code-array-position">	dialog</span> <span class="code-string">"Hello World!"</span><span class="code-keyword">;</span></code></pre>
+      </div>
 
     </section>
     <section class="main-section section-padding" id="Variables">
@@ -128,36 +163,71 @@
         <li><b>Note</b>: The <span class="code-scope">$</span> before the <span class="code-scope">firstVariable</span> word it is a <a href="#Prefix_Operator">Variable Prefix Operator</a></li>
       </ul>
 
-      <code><span class="code-common">var</span> <span class="code-scope">$firstVariable</span>;
-        <span class="code-common">var</span> <span class="code-scope">$firstVariable</span>
-        <span class="code-common">set</span> <span class="code-scope">$firstVariable</span>;
-        <span class="code-common">set</span> <span class="code-scope">$firstVariable</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-common">var</span> <span class="code-scope">$firstVariable</span>;
+<span class="code-common">var</span> <span class="code-scope">$firstVariable</span>
+<span class="code-common">set</span> <span class="code-scope">$firstVariable</span>;
+<span class="code-common">set</span> <span class="code-scope">$firstVariable</span></code></pre>
+      </div>
 
       <p>To initialize your variables in <span class="code-scope">CoreSE</span> you must use the equal to (<span class="code-common"> = </span>) followed by the value of your variable, <b>i.e</b>:</p>
 
-      <code><span class="code-common">set</span> <span class="code-scope">$firstVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is your first variable!"</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-common">set</span> <span class="code-scope">$firstVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is your first variable!"</span>;</code></pre>
+      </div>
 
       <p>You can also use a comma (<span class="code-common"> , </span>) instead of the equal to operator.</p>
 
-      <code><span class="code-common">set</span> <span class="code-scope">$firstVariable$</span>, <span class="code-string">"This is your first variable!"</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-common">set</span> <span class="code-scope">$firstVariable$</span>, <span class="code-string">"This is your first variable!"</span>;</code></pre>
+      </div>
 
       <p class="paragraph-padding">The <span class="code-scope">$</span> before the <span class="code-scope">myVariable"</span> word it's what we call it Variable Prefix.</p>
       <p>For example,</p>
 
-      <code><span class="code-keyword">set</span> <span class="code-scope">.@myVariable$</span> <span class="code-common">=</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">.@myVariable$</span><span class="code-common">,</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-keyword">set</span> <span class="code-scope">.@myVariable$</span> <span class="code-common">=</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">.@myVariable$</span><span class="code-common">,</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span></code></pre>
+      </div>
 
       <p>This syntax is used to declare global variables.</p>
       <p>In this case the <span class="code-scope">.@</span> are the Variable Prefixes.</p>
       <p>You can also use this way to declare a local variable:</p>
 
-      <code><span class="code-keyword">set</span> <span class="code-scope">$myVariable$</span> <span class="code-common">=</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">$myVariable$</span><span class="code-common">,</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-keyword">set</span> <span class="code-scope">$myVariable$</span> <span class="code-common">=</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">$myVariable$</span><span class="code-common">,</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span></code></pre>
+      </div>
 
       <p>By using the <span class="code-scope">.@</span> symbols you will always declare a local variable.</p>
     </section>
@@ -165,14 +235,28 @@
       <header class="header-control">Variable Scope</header>
       <p>Let's suppose you declare a variable as follows:</p>
 
-      <code><span class="code-common">set</span> <span class="code-scope">$variableName</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-common">set</span> <span class="code-scope">$variableName</span>;</code></pre>
+      </div>
 
       <p>This is what we call it a <span class="code-scope">global variable</span> and it is called <span class="code-scope">global</span> because it is available to any other code in the current document.</p>
       <p>Now let's change the example, let's suppose you are declaring a variable using:</p>
 
-      <code><span class="code-common">set</span> <span class="code-scope">.@variableName</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-common">set</span> <span class="code-scope">.@variableName</span>;</code></pre>
+      </div>
 
       <p>This what we call <span class="code-scope">local variable</span>, because it is available only within that specific block of code. This is important for scripts which are called with no RID attached, that is, not triggered by a specific client object.</p>
 
@@ -184,11 +268,17 @@
       <p>They are stored by Zone Server in the database table <span class="code-array">mapreg</span>.</p>
 
       <h1>How to declare a Global Variable</h1>
-      <code><span class="code-common">set</span> <span class="code-scope">$variableName</span>;
-      </code>
-
       <p><b>Note</b>: The <span class="code-scope">$</span> before the <span class="code-scope">variableName</span> it is a <b>global variable</b>.</p>
 
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-common">set</span> <span class="code-scope">$variableName</span>;</code></pre>
+      </div>
     </section>
     <section class="main-section section-padding" id="AI_Prefix">
       <header class="header-control">AI Prefix</header>
@@ -197,11 +287,18 @@
 
       <h1>How to declare an AI Variable</h1>
 
-      <code><span class="code-keyword">set</span> <span class="code-scope">.myVariable</span> <span class="code-common">=</span> <span class="code-number">10</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">.myVariable</span><span class="code-common">,</span> <span class="code-number">10</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">.myVariable$</span> <span class="code-common">=</span><span class="code-string">"Text"</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">.myVariable$</span><span class="code-common">,</span><span class="code-string">"Text"</span><span class="code-keyword">;</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-keyword">set</span> <span class="code-scope">.myVariable</span> <span class="code-common">=</span> <span class="code-number">10</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">.myVariable</span><span class="code-common">,</span> <span class="code-number">10</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">.myVariable$</span> <span class="code-common">=</span><span class="code-string">"Text"</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">.myVariable$</span><span class="code-common">,</span><span class="code-string">"Text"</span><span class="code-keyword">;</span></code></pre>
+      </div>
 
       <p><b>Note</b>: The <span class="code-common">.</span> before the <span class="code-common">variableName</span> it is an <b>AI</b>.</p>
 
@@ -213,11 +310,18 @@
       <p>Consequently, you can access global variables declared from different Client Sides. For example, if a variable called <span class="code-scope">$userName</span> is declared in a Script, you can refer to this variable from the Server Side and Client Side.</p>
       <p>A permanent global account variable stored by the Inter Server. They are stored in the <span class="code-array">global_acc_reg_num</span> table and <span class="code-array">global_acc_reg_str</span>.</p>
 
-      <code><span class="code-keyword">set</span> <span class="code-scope">##myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">##myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">##myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">##myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-keyword">set</span> <span class="code-scope">##myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">##myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">##myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">##myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span></code></pre>
+      </div>
 
     </section>
     <section class="main-section section-padding" id="Local_Prefix_Constants">
@@ -225,11 +329,18 @@
       <p>The Local Constants are stored by Inter Server in the <span class="code-array">acc_reg_num</span> table and <span class="code-array">acc_reg_str</span>.</p>
       <p>A permanent global account variable stored by the Inter Server. They are stored in the "global_acc_reg_num" table and "global_acc_reg_str"</p>
 
-      <code><span class="code-keyword">set</span> <span class="code-scope">#myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">#myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">#myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">#myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-keyword">set</span> <span class="code-scope">#myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">#myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">#myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">#myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span></code></pre>
+      </div>
 
       <p>The only difference you will note from normal <span class="code-scope">#</span> variables is when you have multiple Inter Servers connected to the same Zone Server. The # variables are unique to each Inter Server, while the ## variables are shared by all these Inter Servers.</p>
     </section>
@@ -237,11 +348,18 @@
       <header class="header-control">Instance Prefix</header>
       <p>These are used with the instancing system and are unique to each instance type. Can be accessed from inside the instance or by calling <span class="code-array">getinstancevar</span>.</p>
 
-      <code><span class="code-keyword">set</span> <span class="code-scope">'myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">'myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">'myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
-        <span class="code-keyword">set</span> <span class="code-scope">'myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-keyword">set</span> <span class="code-scope">'myVariable</span> <span class="code-common">=</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">'myVariable</span><span class="code-common">,</span> <span class="code-number">250</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">'myVariable$</span> <span class="code-common">=</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span>
+<span class="code-keyword">set</span> <span class="code-scope">'myVariable$</span><span class="code-common">,</span> <span class="code-string">"This is a string"</span><span class="code-keyword">;</span></code></pre>
+      </div>
 
       <p><b>Note</b>: The <span class="code-scope">#</span> before the <span class="code-scope">variableName</span> it is a <b>local constant variable</b>.</p>
     </section>
@@ -339,15 +457,29 @@
       <p>This data type will allow you to quickly fill up an array in one go.</p>
       <p><b>Follow the pattern:</b></p>
 
-      <code><span class="code-keyword">setarray</span> <span class="code-scope">{array name}</span><span class="code-array">[ {initial position} ]</span></span> <span class="code-common">=</span> <span class="code-array-position">value, value, value, ...</span>;
-        <span class="code-keyword">setarray</span> <span class="code-scope">{array name}</span><span class="code-array">[ {initial position} ]</span></span><span class="code-common">,</span> <span class="code-array-position">value, value, value, ...</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-keyword">setarray</span> <span class="code-scope">{array name}</span><span class="code-array">[ {initial position} ]</span></span> <span class="code-common">=</span> <span class="code-array-position">value, value, value, ...</span>;
+<span class="code-keyword">setarray</span> <span class="code-scope">{array name}</span><span class="code-array">[ {initial position} ]</span></span><span class="code-common">,</span> <span class="code-array-position">value, value, value, ...</span>;</code></pre>
+      </div>
 
       <p>Here's a real world sample:</p>
 
-      <code><span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span> <span class="code-array">[0]</span></span> <span class="code-common">=</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;
-        <span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span><span class="code-array">[0]</span></span><span class="code-common">,</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span> <span class="code-array">[0]</span></span> <span class="code-common">=</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;
+<span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span><span class="code-array">[0]</span></span><span class="code-common">,</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;</code></pre>
+      </div>
 
     </section>
     <section class="main-section section-padding" id="If_and_Else_Statement">
@@ -357,20 +489,36 @@
     <br />
 
     <h1>First Example</h1>
-      <code><span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">1</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"This will always print."</span>;
-        <span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">0</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"And this will never print."</span>;
-        <span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">5</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"This will also always print."</span>;
-        <span class="code-function">if</span> <span class="code-keyword">(-<span class="code-number">1</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"Funny as it is, this will also print just fine."</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">1</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"This will always print."</span>;
+<span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">0</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"And this will never print."</span>;
+<span class="code-function">if</span> <span class="code-keyword">(<span class="code-number">5</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"This will also always print."</span>;
+<span class="code-function">if</span> <span class="code-keyword">(-<span class="code-number">1</span>)</span><span class="code-array-position"> dialog</span></span> <span class="code-string">"Funny as it is, this will also print just fine."</span>;</code></pre>
+      </div>
 
       <h1>Second Example</h1>
-      <code><span class="code-scope">.@answer</span> = <span class="code-number">1</span>;
-        <span class="code-array-position">input</span> <span class="code-scope">.@input</span>;
-        <span class="code-function">if</span> <span class="code-keyword">(</span><span class="code-scope">.@input</span> <span class="code-common">==</span> <span class="code-scope">.@answer</span><span class="code-keyword">)</span>
-        &emsp;&emsp;<span class="code-array-position">close</span><span class="code-keyword">;</span>
-        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"Sorry, your answer is incorrect."</span>;
-        <span class="code-array-position">close</span><span class="code-keyword">;</span>
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-scope">.@answer</span> = <span class="code-number">1</span>;
+<span class="code-array-position">input</span> <span class="code-scope">.@input</span>;
+<span class="code-function">if</span> <span class="code-keyword">(</span><span class="code-scope">.@input</span> <span class="code-common">==</span> <span class="code-scope">.@answer</span><span class="code-keyword">)</span>
+<span class="code-array-position">dialog</span> <span class="code-string">"Correct answer!"</span>;
+<span class="code-array-position">close</span><span class="code-keyword">;</span>
+
+<span class="code-array-position">dialog</span> <span class="code-string">"Sorry, your answer is incorrect."</span>;
+<span class="code-array-position">close</span><span class="code-keyword">;</span></code></pre>
+      </div>
 
     </section>
     <section class="main-section section-padding" id="Switch_and_Case_Statement">
@@ -379,15 +527,22 @@
       <p>It is important to understand how the switch statement is executed in order to avoid mistakes. The switch statement executes line by line (actually, statement by statement). In the beginning, no code is executed. Only when a case statement is found with a value that matches the value of the switch expression the case statement(s) will to executed. The parser continues to execute the statements until the end of the switch block, or the first time it sees a break statement. If you don't write a break statement at the end of a case's statement list, the parser will go on executing the statements of the following case (fall-through).</p>
       <p>Check the Example:</p>
 
-      <code><span class="code-function">switch</span>(<span class="code-function">select</span>(<span class="code-string">"Yes</span><span class="code-array-position">:</span><span class="code-string">No"</span>)) {
-        <span class="code-scope">case 1</span>:
-        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"You said yes!"</span>;
-        &emsp;&emsp;<span class="code-array-position">break</span>;
-        <span class="code-scope">case 2</span>:
-        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"Aww, why?"</span>;
-        &emsp;&emsp;<span class="code-array-position">break</span>;
-        }
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-function">switch</span>(<span class="code-function">select</span>(<span class="code-string">"Yes</span><span class="code-array-position">:</span><span class="code-string">No"</span>)) {
+<span class="code-scope">case 1</span>:
+<span class="code-array-position">				dialog</span> <span class="code-string">"You said yes!"</span>;
+<span class="code-array-position">				break</span>;
+<span class="code-scope">case 2</span>:
+<span class="code-array-position">				dialog</span> <span class="code-string">"Aww, why?"</span>;
+<span class="code-array-position">				break</span>;
+}</code></pre>
+      </div>
 
     </section>
     <section class="main-section section-padding" id="While_Statement">
@@ -396,10 +551,17 @@
       <p>It is a pretest loop, meaning the conditional expression is tested before any of the statements in the body of the loop are performed. If the condition evaluates to false, the statement(s) in the body of the loop is/are never executed. If the condition evaluates to true, the statement(s) are executed, then control transfers back to the conditional expression, which is reevaluated and the cycle continues.</p>
       <p>Check the example below:</p>
 
-      <code><span class="code-function">while</span> (<span class="code-number">10</span> <span class="code-common">>=</span> <span class="code-number">1</span>)) {
-        &emsp;&emsp;<span class="code-event">doThis</span>;
-      }
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-function">while</span> (<span class="code-number">10</span> <span class="code-common">>=</span> <span class="code-number">1</span>)) {
+<span class="code-event">	doThis</span>;
+}</code></pre>
+      </div>
 
     </section>
     <section class="main-section section-padding" id="For_Statement">
@@ -407,15 +569,29 @@
       <p>Another pretest looping structure is the 'for' statement. It is considered a specialized form of the 'while' statement, and is usually associated with counter-controlled loops. Here are the steps of the 'for' statement: the initialize statement is executed first and only once. The condition test is performed. When the condition evaluates to false, the rest of the for statement is skipped. When the condition evaluates to true, the body of the loop is executed, then the update statement is executed (this usually involves incrementing a variable). Then the condition is reevaluated and the cycle continues.</p>
 
       <h1>First Example</h1>
-      <code><span class="code-function">for</span>( <span class="code-common"><</span><span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
-      &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string"> "This line will print 5 times."</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-function">for</span>( <span class="code-common"><</span><span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
+<span class="code-array-position">dialog</span> <span class="code-string"> "This line will print 5 times."</span>;</code></pre>
+      </div>
 
       <h1>Second Example</h1>
-      <code><span class="code-array-position">dialog</span> <span class="code-string">"This will print the numbers 1 - 5."</span>;
-      <span class="code-function">for</span>( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
-      &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"Number: "</span> <span class="code-common">+</span> <span class="code-scope">.@i</span>;
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-array-position">dialog</span> <span class="code-string">"This will print the numbers 1 - 5."</span>;
+<span class="code-function">for</span>( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
+<span class="code-array-position">dialog</span> <span class="code-string">"Number: "</span> <span class="code-common">+</span> <span class="code-scope">.@i</span>;</code></pre>
+      </div>
 
     </section>
     <section class="main-section section-padding" id="Do_Statement">
@@ -423,43 +599,61 @@
       <p>The <span class="code-array">do...while</span> is the only post-test loop structure available in this script language. With a post-test, the statements are executed once before the condition is tested. When the condition is true, the statement(s) are repeated. When the condition is false, control is transferred to the statement following the 'do...while' loop expression.</p>
 
       <h1>First Example</h1>
-      <code><span class="code-array-position">dialog</span> <span class="code-string">"This will countdown from 10 to 1."</span>;
-        <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">10</span>;
-        <span class="code-function">do</span> {
-        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-scope">.@i</span>;
-        &emsp;&emsp;<span class="code-scope">.@i</span> <span class="code-common">-=</span> <span class="code-number">1</span>;
-        } <span class="code-function">while</span> (<span class="code-scope">.@i</span> <span class="code-common">></span> <span class="code-number">0</span>);
-      </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-array-position">dialog</span> <span class="code-string">"This will countdown from 10 to 1."</span>;
+<span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">10</span>;
+<span class="code-function">do</span> {
+<span class="code-array-position">	dialog</span> <span class="code-scope">.@i</span>;
+<span class="code-scope">	.@i</span> <span class="code-common">-=</span> <span class="code-number">1</span>;
+} <span class="code-function">while</span> (<span class="code-scope">.@i</span> <span class="code-common">></span> <span class="code-number">0</span>);</code></pre>
+      </div>
 
       <h1>Second Example</h1>
-      <code>
-      <span class="code-array-position">dialog</span> <span class="code-string">"This menu will keep appearing until you pick Cancel"</span>;
-      <span class="code-function">do</span> {
-      &emsp;&emsp;<span class="code-scope">.@menu</span> <span class="code-common">=</span> <span class="code-function">select</span>(<span class="code-string">"One</span><span class="code-array-position">:</span><span class="code-string"><span class="code-string">Two</span><span class="code-array-position">:</span><span class="code-string">Three</span><span class="code-array-position">:</span><span class="code-string">Cancel</span>");
-      } <span class="code-function">while</span> (<span class="code-scope">.@menu</span> <span class="code-common">!=</span> <span class="code-number">4</span>);
-        </code>
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-array-position">dialog</span> <span class="code-string">"This menu will keep appearing until you pick Cancel"</span>;
+<span class="code-function">do</span> {
+<span class="code-scope">	.@menu</span> <span class="code-common">=</span> <span class="code-function">select</span>(<span class="code-string">"One</span><span class="code-array-position">:</span><span class="code-string">Two</span><span class="code-array-position">:</span><span class="code-string">Three</span><span class="code-array-position">:</span><span class="code-string">Cancel</span>");
+} <span class="code-function">while</span> (<span class="code-scope">.@menu</span> <span class="code-common">!=</span> <span class="code-number">4</span>);</code></pre>
+      </div>
     </section>
     <section class="main-section section-padding" id="Freeloop_Statement">
       <header>Freeloop Statement</header>
       <p class="paragraph-padding">Toggling this to enabled (1) allows the script instance to bypass the infinite loop protection, allowing your script to loop as much as it may need. Disabling (0) will warn you if an infinite loop is detected.</p>
       <p class="paragraph-padding">The command will return the state of freeloop for the attached script, even if no argument is provided.</p>
-      <code><span class="code-scope">freeloop</span>(<span class="code-number">1</span>); <span class="code-comment">// Enable script to loop freely</span>
-        
-        <span class="code-comment">// Be careful with what you do here</span>
-        <span class="code-function">for</span> ( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">0</span>; <span class="code-scope">.@i</span> <span class="code-common"><</span> <span class="code-scope">.@bigloop</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
-        &emsp;&emsp;<span class="code-event">doThis</span>;
-        
-        <span class="code-comment">// Will sleep the script for 1ms when detect an infinity loop to
-        // Let AEGIS do what it needs to do (socket, timer, process, etc.)</span>
-	      }
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-scope">freeloop</span>(<span class="code-number">1</span>); <span class="code-comment">// Enable script to loop freely</span>
+<span class="code-comment">// Be careful with what you do here</span>
+<span class="code-function">for</span> ( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">0</span>; <span class="code-scope">.@i</span> <span class="code-common"><</span> <span class="code-scope">.@bigloop</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
+<span class="code-event">	doThis</span>;
+<span class="code-comment">// Will sleep the script for 1ms when detect an infinity loop to</span>
+<span class="code-comment">// Let AEGIS do what it needs to do (socket, timer, process, etc.)</span>
+}
 
-        <span class="code-function">freeloop</span>(<span class="code-number">0</span>); <span class="code-comment">// Disable freeloop</span>
+<span class="code-function">freeloop</span>(<span class="code-number">0</span>); <span class="code-comment">// Disable freeloop</span>
 
-        <span class="code-function">for</span> ( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">0</span>; <span class="code-scope">.@i</span> <span class="code-common"><</span> <span class="code-scope">.@bigloop</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
-        &emsp;&emsp;<span class="code-event">doThis</span>;
-        <span class="code-comment">// Throw an infinity loop error</span>
-        }
-      </code>
+<span class="code-function">for</span> ( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">0</span>; <span class="code-scope">.@i</span> <span class="code-common"><</span> <span class="code-scope">.@bigloop</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
+<span class="code-event">	doThis</span>;
+<span class="code-comment">// Throw an infinity loop error</span>
+}</code></pre>
+      </div>
     </section>
     <section class="main-section section-padding" id="Function_Declarations">
       <header>Function Declarations</header>
@@ -468,17 +662,25 @@
         <li class="li-fixer">Call the function anywhere within the script. It can also return a value when used with parentheses.</li>
         <li class="li-fixer">Define the function within the script.</li>
       </ol>
-      <code><span class="code-function">function</span>	<span class="code-script">script</span>	try	{
-      &emsp;&emsp;<span class="code-event">doThat</span>;
-      }
+      <div class="code-block-wrapper">
+        <div class="code-block-header">
+          <span class="code-block-title">CoreSE</span>
+          <button class="copy-button" aria-label="Copy code">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
+          </button>
+        </div>
+        <pre class="language-core"><code><span class="code-function">function</span>	<span class="code-script">script</span>	try	{
+<span class="code-event">	doThat</span>;
+}
 
-      -	<span class="code-script">script</span>	testing_function	-1,{
-      &emsp;&emsp;<span class="code-scope">.@try</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"It is a function"</span>); <span class="code-comment">// 1</span>
-      &emsp;&emsp;<span class="code-scope">.@not</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"Not a function"</span>); <span class="code-comment">// 0</span>
-      }
-      </code>
+-	<span class="code-script">script</span>	testing_function	-1,{
+
+<span class="code-scope">.@try</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"It is a function"</span>); <span class="code-comment">	// 1</span>
+<span class="code-scope">.@not</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"Not a function"</span>); <span class="code-comment">	// 0</span>
+}</code></pre>
+      </div>
     </section>
   </main>
-  <footer></footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
