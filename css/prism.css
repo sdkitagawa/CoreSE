@@ -1,0 +1,150 @@
+/* Prism.js Theme for CoreSE Documentation */
+
+/* Base code styles - keep original colors from styles.css */
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: "Fira Code", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.9rem;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+  tab-size: 2;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  padding: 0.25rem;
+  margin: 1rem 0;
+  overflow: auto;
+  border-radius: 8px;
+  background: #1d1f20;
+  border: 1px solid #27292a;
+}
+
+html[data-theme="light"] pre[class*="language-"] {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+/* Let the manual highlighting from index.html take priority */
+/* Commented out - was blocking manual highlighting */
+/* pre[class*="language-"] .code-keyword, */
+/* pre[class*="language-"] .code-string, */
+/* pre[class*="language-"] .code-number, */
+/* pre[class*="language-"] .code-common, */
+/* pre[class*="language-"] .code-array, */
+/* pre[class*="language-"] .code-array-position, */
+/* pre[class*="language-"] .code-scope, */
+/* pre[class*="language-"] .code-event, */
+/* pre[class*="language-"] .code-function, */
+/* pre[class*="language-"] .code-comment, */
+/* pre[class*="language-"] .code-script { */
+/*   color: inherit; */
+/*   background: none; */
+/* } */
+
+/* Code block wrapper */
+.code-block-wrapper {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #27292a;
+  border: 1px solid #27292a;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: #b7b1a8;
+}
+
+.code-block-wrapper pre[class*="language-"] {
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+}
+
+html[data-theme="light"] .code-block-header {
+  background: #e0e0e0;
+  border-color: #e0e0e0;
+  color: #666666;
+}
+
+/* Copy button */
+.copy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 28px;
+  background: transparent;
+  border: 1px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #b7b1a8;
+  transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e8e6e3;
+}
+
+.copy-button.copied {
+  color: #98f161;
+  border-color: #98f161;
+}
+
+.copy-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+html[data-theme="light"] .copy-button {
+  border-color: #ccc;
+  color: #666;
+}
+
+html[data-theme="light"] .copy-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #1d1f20;
+}
+
+/* Scrollbar styling */
+pre[class*="language-"]::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-track {
+  background: #1d1f20;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+pre[class*="language-"]::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html[data-theme="light"] pre[class*="language-"]::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+html[data-theme="light"] pre[class*="language-"]::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+html[data-theme="light"] pre[class*="language-"]::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
