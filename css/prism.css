@@ -50,6 +50,17 @@ html[data-theme="light"] pre[class*="language-"] {
 .code-block-wrapper {
   position: relative;
   margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #27292a;
+}
+
+.code-block-wrapper > * {
+  width: 100%;
+  min-width: 0;
 }
 
 .code-block-header {
@@ -63,18 +74,44 @@ html[data-theme="light"] pre[class*="language-"] {
   padding: 0.5rem 1rem;
   font-size: 0.8rem;
   color: #b7b1a8;
+  min-width: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.code-block-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .code-block-wrapper pre[class*="language-"] {
   margin: 0;
   border-radius: 0 0 8px 8px;
   border-top: none;
+  overflow: hidden;
+}
+
+.code-block-wrapper pre[class*="language-"] code,
+.code-block-wrapper > pre > code,
+.code-block-wrapper code {
+  display: block;
+  margin: 0 !important;
+  padding: 1.25rem 1.5rem !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  overflow: hidden;
 }
 
 html[data-theme="light"] .code-block-header {
   background: #e0e0e0;
   border-color: #e0e0e0;
   color: #666666;
+}
+
+html[data-theme="light"] .code-block-wrapper {
+  border-color: #e0e0e0;
 }
 
 /* Copy button */
