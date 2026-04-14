@@ -106,8 +106,7 @@
             <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
           </button>
         </div>
-        <pre class="language-core"><code><span class="code-event">OnPCLoginEvent</span>:
-  <span class="code-array-position">	dialog</span> <span class="code-string">"Hello World!"</span><span class="code-keyword">;</span></code></pre>
+        <pre class="language-core"><code><span class="code-array-position">dialog</span> <span class="code-string">"Hello World!"</span><span class="code-keyword">;</span></code></pre>
       </div>
 
     </section>
@@ -464,8 +463,8 @@
             <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
           </button>
         </div>
-        <pre class="language-core"><code><span class="code-keyword">setarray</span> <span class="code-scope">{array name}</span><span class="code-array">[ {initial position} ]</span></span> <span class="code-common">=</span> <span class="code-array-position">value, value, value, ...</span>;
-<span class="code-keyword">setarray</span> <span class="code-scope">{array name}</span><span class="code-array">[ {initial position} ]</span></span><span class="code-common">,</span> <span class="code-array-position">value, value, value, ...</span>;</code></pre>
+        <pre class="language-core"><code><span class="code-keyword">setarray</span> <span class="code-scope">array_name</span><span class="code-array">[i]</span></span> <span class="code-common">=</span> <span class="code-array-position">value, value, value, ...</span>;
+<span class="code-keyword">setarray</span> <span class="code-scope">array_name</span><span class="code-array">[i]</span></span><span class="code-common">,</span> <span class="code-array-position">value, value, value, ...</span>;</code></pre>
       </div>
 
       <p>Here's a real world sample:</p>
@@ -511,13 +510,17 @@
           </button>
         </div>
         <pre class="language-core"><code><span class="code-scope">.@answer</span> = <span class="code-number">1</span>;
+
 <span class="code-array-position">input</span> <span class="code-scope">.@input</span>;
-<span class="code-function">if</span> <span class="code-keyword">(</span><span class="code-scope">.@input</span> <span class="code-common">==</span> <span class="code-scope">.@answer</span><span class="code-keyword">)</span>
-<span class="code-array-position">dialog</span> <span class="code-string">"Correct answer!"</span>;
-<span class="code-array-position">close</span><span class="code-keyword">;</span>
+
+<span class="code-function">if</span> <span class="code-keyword">(</span><span class="code-scope">.@input</span> <span class="code-common">==</span> <span class="code-scope">.@answer</span><span class="code-keyword">)</span> {
+<span class="code-array-position">        dialog</span> <span class="code-string">"Correct answer!"</span>;
+<span class="code-array-position">        close</span><span class="code-keyword">;</span>
 
 <span class="code-array-position">dialog</span> <span class="code-string">"Sorry, your answer is incorrect."</span>;
-<span class="code-array-position">close</span><span class="code-keyword">;</span></code></pre>
+<span class="code-array-position">close</span><span class="code-keyword">;</span>
+}</code></pre>
+
       </div>
 
     </section>
@@ -536,11 +539,11 @@
         </div>
         <pre class="language-core"><code><span class="code-function">switch</span>(<span class="code-function">select</span>(<span class="code-string">"Yes</span><span class="code-array-position">:</span><span class="code-string">No"</span>)) {
 <span class="code-scope">case 1</span>:
-<span class="code-array-position">				dialog</span> <span class="code-string">"You said yes!"</span>;
-<span class="code-array-position">				break</span>;
+<span class="code-array-position">        dialog</span> <span class="code-string">"You said yes!"</span>;
+<span class="code-array-position">        break</span>;
 <span class="code-scope">case 2</span>:
-<span class="code-array-position">				dialog</span> <span class="code-string">"Aww, why?"</span>;
-<span class="code-array-position">				break</span>;
+<span class="code-array-position">        dialog</span> <span class="code-string">"Aww, why?"</span>;
+<span class="code-array-position">        break</span>;
 }</code></pre>
       </div>
 
@@ -559,7 +562,7 @@
           </button>
         </div>
         <pre class="language-core"><code><span class="code-function">while</span> (<span class="code-number">10</span> <span class="code-common">>=</span> <span class="code-number">1</span>)) {
-<span class="code-event">	doThis</span>;
+<span class="code-event">        doThis</span>;
 }</code></pre>
       </div>
 
@@ -576,8 +579,9 @@
             <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
           </button>
         </div>
-        <pre class="language-core"><code><span class="code-function">for</span>( <span class="code-common"><</span><span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
-<span class="code-array-position">dialog</span> <span class="code-string"> "This line will print 5 times."</span>;</code></pre>
+        <pre class="language-core"><code><span class="code-function">for</span>( <span class="code-common"><</span><span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
+<span class="code-array-position">        dialog</span> <span class="code-string"> "This line will print 5 times."</span>;
+}</code></pre>
       </div>
 
       <h1>Second Example</h1>
@@ -589,8 +593,9 @@
           </button>
         </div>
         <pre class="language-core"><code><span class="code-array-position">dialog</span> <span class="code-string">"This will print the numbers 1 - 5."</span>;
-<span class="code-function">for</span>( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
-<span class="code-array-position">dialog</span> <span class="code-string">"Number: "</span> <span class="code-common">+</span> <span class="code-scope">.@i</span>;</code></pre>
+<span class="code-function">for</span>( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
+<span class="code-array-position">        dialog</span> <span class="code-string">"Number: "</span> <span class="code-common">+</span> <span class="code-scope">.@i</span>;
+}</code></pre>
       </div>
 
     </section>
@@ -608,8 +613,9 @@
         </div>
         <pre class="language-core"><code><span class="code-array-position">dialog</span> <span class="code-string">"This will countdown from 10 to 1."</span>;
 <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">10</span>;
+
 <span class="code-function">do</span> {
-<span class="code-array-position">	dialog</span> <span class="code-scope">.@i</span>;
+<span class="code-array-position">  dialog</span> <span class="code-scope">.@i</span>;
 <span class="code-scope">	.@i</span> <span class="code-common">-=</span> <span class="code-number">1</span>;
 } <span class="code-function">while</span> (<span class="code-scope">.@i</span> <span class="code-common">></span> <span class="code-number">0</span>);</code></pre>
       </div>
@@ -623,6 +629,7 @@
           </button>
         </div>
         <pre class="language-core"><code><span class="code-array-position">dialog</span> <span class="code-string">"This menu will keep appearing until you pick Cancel"</span>;
+
 <span class="code-function">do</span> {
 <span class="code-scope">	.@menu</span> <span class="code-common">=</span> <span class="code-function">select</span>(<span class="code-string">"One</span><span class="code-array-position">:</span><span class="code-string">Two</span><span class="code-array-position">:</span><span class="code-string">Three</span><span class="code-array-position">:</span><span class="code-string">Cancel</span>");
 } <span class="code-function">while</span> (<span class="code-scope">.@menu</span> <span class="code-common">!=</span> <span class="code-number">4</span>);</code></pre>
@@ -639,19 +646,22 @@
             <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
           </button>
         </div>
-        <pre class="language-core"><code><span class="code-scope">freeloop</span>(<span class="code-number">1</span>); <span class="code-comment">// Enable script to loop freely</span>
+        <pre class="language-core"><code><span class="code-scope">freeloop</span>(<span class="code-number">1</span>);<span class="code-comment">  // Enable script to loop freely</span>
+
 <span class="code-comment">// Be careful with what you do here</span>
 <span class="code-function">for</span> ( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">0</span>; <span class="code-scope">.@i</span> <span class="code-common"><</span> <span class="code-scope">.@bigloop</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
 <span class="code-event">	doThis</span>;
+
 <span class="code-comment">// Will sleep the script for 1ms when detect an infinity loop to</span>
 <span class="code-comment">// Let AEGIS do what it needs to do (socket, timer, process, etc.)</span>
+
 }
 
 <span class="code-function">freeloop</span>(<span class="code-number">0</span>); <span class="code-comment">// Disable freeloop</span>
 
 <span class="code-function">for</span> ( <span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">0</span>; <span class="code-scope">.@i</span> <span class="code-common"><</span> <span class="code-scope">.@bigloop</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> ) {
-<span class="code-event">	doThis</span>;
-<span class="code-comment">// Throw an infinity loop error</span>
+<span class="code-event"> doThis</span>;
+<span class="code-comment"> // Throw an infinity loop error</span>
 }</code></pre>
       </div>
     </section>
@@ -675,8 +685,8 @@
 
 -	<span class="code-script">script</span>	testing_function	-1,{
 
-<span class="code-scope">.@try</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"It is a function"</span>); <span class="code-comment">	// 1</span>
-<span class="code-scope">.@not</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"Not a function"</span>); <span class="code-comment">	// 0</span>
+<span class="code-scope">.@try</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"It is a function"</span>); <span class="code-comment"> // 1</span>
+<span class="code-scope">.@not</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"Not a function"</span>); <span class="code-comment">   // 0</span>
 }</code></pre>
       </div>
     </section>
