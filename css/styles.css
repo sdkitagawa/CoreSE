@@ -627,13 +627,19 @@ html[data-theme="light"] table th {
 }
 
 .good-practices-list {
-  margin-left: 1.5rem;
+  margin-left: 3rem;
   margin-bottom: 1rem;
 }
 
 .good-practices-list li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
+}
+
+.good-practices-list li > ul {
+  margin-top: 0.75rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 .paragraph-padding {
@@ -646,6 +652,17 @@ html[data-theme="light"] table th {
 
 .li-fixer {
   margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
 .section-padding {
