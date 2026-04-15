@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,12 +33,14 @@
 <br />
 
 # Local Prefix Constants
-**Local Prefix Constants** are stored by **Inter Server** into `acc_reg_num` table and `acc_reg_str`.
 
-The only difference you will note from normal `#` (**local constant variable**) is that when you have multiple **Inter Servers** connected to the same **Zone Server**. The `#` (**global constant variables**) are unique to each **Inter Server**, while the `##` (**local constant variables**) are shared by all these **Inter Servers**.
+**Local Prefix Constants** are stored by **Inter Server** into `acc_reg_num` table and `acc_reg_str`.  
+
+The only difference you will note from normal `#` (**local constant variable**) is that when you have multiple **Inter Servers** connected to the same **Zone Server**. The `#` (**global constant variables**) are unique to each **Inter Server**, while the `##` (**local constant variables**) are shared by all these **Inter Servers**.  
 
 # How to declare a Local Constant Variable
-Here is how to declare `local constant variables`:
+
+Here is how to declare `local constant variables`:  
 
 ```cs
 set #variableName = 10;
@@ -47,4 +49,4 @@ set #variableName$ = "Text";
 set #variableName$, "Text";
 ```
 
-**Note**: The `#` before the `variableName` it is a **local constant variable**.
+**Note**: The `#` before the `variableName` it is a **local constant variable**.  
