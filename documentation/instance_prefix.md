@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,10 +33,12 @@
 <br />
 
 # Instance Prefix
-**Instance Prefix** are used with the instancing system and are unique to each instance type. Can be accessed from inside the instance or by calling `getinstancevar`.
+
+**Instance Prefix** are used with the instancing system and are unique to each instance type. Can be accessed from inside the instance or by calling `getinstancevar`.  
 
 # How to declare an Instance Variable
-Here is how to declare `instance variables`:
+
+Here is how to declare `instance variables`:  
 
 ```swift
 set 'variableName = 10;
@@ -45,4 +47,4 @@ set 'variableName$ = "Text";
 set 'variableName$, "Text";
 ```
 
-**Note**: The `'` before the `variableName` it is a **instance variable**.
+**Note**: The `'` before the `variableName` it is a **instance variable**.  
