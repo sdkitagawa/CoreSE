@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,10 +33,11 @@
 <br />
 
 # Do Statement
-The `do...while` is the only post-test loop structure available in this script language. With a post-test, the statements are executed once before the condition is tested.
+
+The `do...while` is the only post-test loop structure available in this script language. With a post-test, the statements are executed once before the condition is tested.  
 
 - When the condition is `True`, the statement(s) are repeated. 
-- When the condition is `False`, control is transferred to the statement following the 'do...while' loop expression.
+- When the condition is `False`, control is transferred to the statement following the 'do...while' loop expression.  
 
 ## First Example
 
@@ -50,6 +51,7 @@ do {
 ```
 
 ## Second Example
+
 ```cpp
 dialog "This menu will keep appearing until you pick Cancel";
 do {
