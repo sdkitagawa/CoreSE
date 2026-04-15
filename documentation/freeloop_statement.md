@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,26 +33,27 @@
 <br />
 
 # Freeloop Statement
-Toggling this to enabled (1) allows the script instance to bypass the infinite loop protection, allowing your script to loop as much as it may need. Disabling (0) will warn you if an infinite loop is detected.
 
-The structure will return the state of freeloop for the attached script, even if no argument is provided.
+Toggling this to enabled (1) allows the script instance to bypass the infinite loop protection, allowing your script to loop as much as it may need. Disabling (0) will warn you if an infinite loop is detected.  
+
+The structure will return the state of freeloop for the attached script, even if no argument is provided.  
 
 ```cpp
-// Enabling the script to loop freely
-freeloop(1);
+freeloop(1);  // Enable script to loop freely
 
 // Be careful with what you do here
 for ( .@i = 0; .@i < .@bigloop; .@i++ ) {
-  doThis;
+	doThis;
+
 // Will sleep the script for 1ms when detect an infinity loop to
-// Let AEGIS Core do what it needs to do (socket, timer, process, etc.)
+// Let AEGIS do what it needs to do (socket, timer, process, etc.)
+
 }
 
-// Disable the freeloop
-freeloop(0);
+freeloop(0); // Disable freeloop
 
 for ( .@i = 0; .@i < .@bigloop; .@i++ ) {
-  doThis;
-// Throw an infinity loop error
+ doThis;
+ // Throw an infinity loop error
 }
 ```
