@@ -44,15 +44,16 @@ You can check more about this programming language down below or clicking [here]
 <br />
 
 ## Features
-* Statical and Strong Typing
-* Statical and Strong Scoping
-* Higher-order functions and classes
-* Classes and inheritance
-* Nested classes
-* Instance
-* Garbage collection
-* Built-in unit tests
-* **Optional commas**
+
+- Statical and Strong Typing
+- Statical and Strong Scoping
+- Higher-order functions and classes
+- Classes and inheritance
+- Nested classes
+- Instance
+- Garbage collection
+- Built-in unit tests
+- **Optional commas**
 
 ## How does it look a CoreSE code
 
@@ -77,14 +78,17 @@ if((compare(","+.maps$+"," , ","+@map$+",")) && (query_sql("SELECT zoneaccount_i
  ```
 
 ## Special thanks
+
 CoreSE was supported by a AEGIS Core which is a closed-source project from [GRAVITY](https://www.gravity.co.kr/). This programming language has great inspiration comes from the elegant <a href="http://www.lua.org" target="_blank">Lua</a> and <a href="https://www.gravity-lang.org/" target="_blank">Gravity</a> programming languages. Special thanks and credits to [**Marco Bambini**](https://github.com/marcobambini) and [**Roberto Ierusalimschy**](https://github.com/roberto-ieru) and [**Luiz Henrique Figueiredo**](https://github.com/lhf) for the logo, documentation and also language structure ideas.
 
 ## Documentation
-The <a href="https://corese.github.io/#/README">Getting Started</a> page is a guide for downloading and compiling the language. There is also a more extensive <a href="https://corese.github.io">language documentation</a>. Official [wiki](https://github.com/sdkitagawa/CoreSE/wiki) is used to collect related projects and tools.
+
+The [Getting Started](https://github.com/sdkitagawa/CoreSE/blob/main/README.md) page is a guide for downloading and compiling the language. There is also a more extensive <a href="https://corese.github.io">language documentation</a>. Official [wiki](https://github.com/sdkitagawa/CoreSE/wiki) is used to collect related projects and tools.
 
 ## Where CoreSE is used
-* CoreSE is the core language built into AEGIS Core
-* CoreSE is the scripting language for the [AEGIS Core game engine](https://www.youtube.com/@WarpPortal)
+
+- CoreSE is the core language built into AEGIS Core.
+- CoreSE is the scripting language for the [AEGIS Core](https://www.youtube.com/@WarpPortal) game engine.
 
 ## License
 CoreSE is available under the permissive MIT license.
