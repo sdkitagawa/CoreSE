@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,11 +33,12 @@
 <br />
 
 # AI Variables
-**AI Variables** exist in the **Client Side** only and disappear when the **Server Side** restarts or when the script is reloaded.
+**AI Variables** exist in the **Client Side** only and disappear when the **Server Side** restarts or when the script is reloaded.  
 
-Can be accessed from inside of the **Client Side** or by calling the function `getvariableofpc`. Function objects can also have `.variables` which are accessible from inside the function, however `getvariableofpc` does NOT work on function objects.
+Can be accessed from inside of the **Client Side** or by calling the function `getvariableofpc`. Function objects can also have `.variables` which are accessible from inside the function, however `getvariableofpc` does NOT work on function objects.  
 
 # How to declare a AI Variable
+
 Here is how to declare `AI variables`:
 
 ```cs
@@ -47,4 +48,4 @@ set .variableName$ = "Text";
 set .variableName$, "Text";
 ```
 
-**Note**: The `.` before the `variableName` it is an **AI**.
+**Note**: The `.` before the `variableName` it is an **AI**.  
