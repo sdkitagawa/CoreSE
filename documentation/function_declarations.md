@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,20 +33,23 @@
 <br />
 
 # Function Declarations
-**Function Declarations** must be defined and used within a script, and works like a label with arguments. Note that the name may only contain alphanumeric characters and underscore.
+
+**Function Declarations** must be defined and used within a script, and works like a label with arguments. Note that the name may only contain alphanumeric characters and underscore.  
 
 ## How to use it
-- Declare the function.
-- Call the function anywhere within the script. It can also return a value when used with parentheses.
-- Define the function within the script.
+
+- Declare the function.  
+- Call the function anywhere within the script. It can also return a value when used with parentheses.  
+- Define the function within the script.  
 
 ```cpp
-function script try {
-  doThat;
+function	script	try	{
+	doThat;
 }
 
-- script test -1,{
-  .@try = is_function("try"); // 1
-  .@not = is_function("not"); // 0
+-	script	testing_function	-1,{
+
+	.@try = is_function("It is a function");  // 1
+	.@not = is_function("Not a function");    // 0
 }
 ```
