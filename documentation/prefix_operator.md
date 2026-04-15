@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,10 +33,12 @@
 <br />
 
 # Prefix Operator
-In **CoreSE** Variables are dived into two types:
-- Prefix Operator
-- Postfix Operator
 
-`Prefix` is used to define the scope and extent of a variable.
+In **CoreSE** Variables are dived into two types:  
 
-`Postfix` is used to define the type of a variable are used to define the type of a variable between integer (positive and negative integer numbers) or string.
+- Prefix Operator  
+- Postfix Operator  
+
+`Prefix` is used to define the scope and extent of a variable.  
+
+`Postfix` is used to define the type of a variable are used to define the type of a variable between integer (positive and negative integer numbers) or string.  
