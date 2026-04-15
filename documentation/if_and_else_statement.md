@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,9 +33,10 @@
 <br />
 
 # If & Else Statement
-This is the basic conditional statement command, and it is not the only one available in this scripting language. The condition can be any expression. All expressions resulting in a non-zero value will be considered `True`, including negative values. All expressions resulting in a zero are `False`.
 
-If the expression results in `True`, the statement will be executed. If it is `False`, nothing happens and we move on to the next line of the script.
+This is the basic conditional statement command, and it is not the only one available in this scripting language. The condition can be any expression. All expressions resulting in a non-zero value will be considered `True`, including negative values. All expressions resulting in a zero are `False`.  
+
+If the expression results in `True`, the statement will be executed. If it is `False`, nothing happens and we move on to the next line of the script.  
 
 ## First Example
 
@@ -93,5 +94,4 @@ if (@queststarted == 1 && countitem(.@itemId) >= 5) {
 	@queststarted = 1;
 	close;
 }
-
 ```
