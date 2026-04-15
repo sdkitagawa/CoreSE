@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,18 +33,19 @@
 <br />
 
 # Variable Scope
-Let's suppose you declare a variable as follows:
+
+Let's suppose you declare a variable as follows:  
 
 ```cs
 set $variableName;
 ```
 
-This is what we call it a `global variable` and it is called `global` because it is available to any other code in the current document.
+This is what we call it a `global variable` and it is called `global` because it is available to any other code in the current document.  
 
-Now let's change the example, let's suppose you are declaring a variable using:
+Now let's change the example, let's suppose you are declaring a variable using:  
 
 ```cs
 set .@variableName;
 ```
 
-This what we call `local variable`, because it is available only within that specific block of code. This is important for scripts which are called with no RID attached, that is, not triggered by a specific client object.
+This what we call `local variable`, because it is available only within that specific block of code. This is important for scripts which are called with no RID attached, that is, not triggered by a specific client object.  
