@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,17 +33,19 @@
 <br />
 
 # Global Prefix
-**Global variables** are in fact properties of the `global object`. In a CoreSE script file the `global object` is the whole **Server Side**, so you can set and access global variables.
 
-Consequently, you can access global variables declared from different **Client Sides**. For example, if a variable called a variable `$userName` declared in a Script, you can refer to this variable from the **Server Side** and **Client Side**.
+**Global variables** are in fact properties of the `global object`. In a CoreSE script file the `global object` is the whole **Server Side**, so you can set and access global variables.  
+
+Consequently, you can access global variables declared from different **Client Sides**. For example, if a variable called a variable `$userName` declared in a Script, you can refer to this variable from the **Server Side** and **Client Side**.  
 
 They are stored by Zone Server in the database table `zone_reg` or `mapreg`.
 
 # How to declare a Global Variable
-Here is how to declare `global variables`:
+
+Here is how to declare `global variables`:  
 
 ```cs
 set $variableName;
 ```
 
-**Note**: The `$` before the `variableName` it is a **global variable**.
+**Note**: The `$` before the `variableName` it is a **global variable**.  
