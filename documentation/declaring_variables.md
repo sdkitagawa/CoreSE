@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,12 +33,13 @@
 <br />
 
 # Declaring variables
-To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:
 
-**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.<br />
-**Optional Pattern** `<keyword> <prefix operator> <variable name>`.
+To declare a variable in **CoreSE** first use the keyword `var` or `set` following by this choose your **Prefix Operator** plus the variable name and then use the comma (`optional`), **i.e**:  
 
-**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).
+**Good Practice Pattern**: `<keyword> <prefix operator> <variable name> <comma>`.  
+**Optional Pattern** `<keyword> <prefix operator> <variable name>`.  
+
+**Note**: The `$` before the `firstVariable` word it is a [Variable Prefix Operator](./prefix_operator.md).  
 
 ```cs
 var $firstVariable;
@@ -48,13 +49,14 @@ set $firstVariable
 ```
 
 # Initializing variables
-To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:
+
+To initialize your variables in **CoreSE** you must use the `equal to` (`=`) followed by the value of your variable, **i.e**:  
 
 ```cs
 set $firstVariable = "This is your first variable!";
 ```
 
-You can also use a `comma` (`,`) instead of the `equal to` signal.
+You can also use a `comma` (`,`) instead of the `equal to` signal.  
 
 ```cs
 set $firstVariable, "This is your first variable!";
