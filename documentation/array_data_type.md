@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,17 +33,33 @@
 <br />
 
 # Array Data Type
-There's not much to say about **Array Data Type** variables. These are variables capable to store multiple values in a single variable by using different indexes.
 
-This data type will allow you to quickly fill up an array in one go.
+There's not much to say about **Array Data Type** variables. These are variables capable to store multiple values in a single variable by using different indexes.  
+
+This data type will allow you to quickly fill up an array in one go.  
 
 **Follow the pattern**: `setarray <prefix operator> <array name>[<initial index>] = <value 1>, <value 2>, <value 3>, ...;`
 
 # How to declare an Array Variable
-Here is how to declare `array variables`:
+
+Here is how to declare `array variables`.
+
+Follow the pattern:
+
+```cpp
+setarray array_name[i] = x, y, z, ...;
+setarray array_name[i], x, y, z, ...;
+```
+
+```cpp
+setarray .@fullName[0] = "Name", "Surname", "Last name", ...;
+setarray .@fullName[0], "Name", "Surname", "Last name", ...;
+```	
+
 
 ```cpp
 setarray .@myArray[0] = 200, 300, 150;
 setarray .@myArray[0], 200, 300, 150;
 ```
+
 
