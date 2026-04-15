@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -35,29 +35,29 @@
 # Variables
 
 ## How does it work
-You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
 
-Variable names can have normal `alpha-numeric characters` and can have `numeric characters`. **CoreSE** is **Case Sensitive**.
-<br />
-<br />
+You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.  
+
+Variable names can have normal `alpha-numeric characters` and can have `numeric characters`. **CoreSE** is **Case Sensitive**.  
 
 ### Understanding Alpha-Numeric Characters
-When it comes to alphanumeric characters, the rule is that we can use letters including the characters from **`A`** to **`Z`** (which we call it **`adamantoise case`** also known as **upper case**) and the characters from **`a`** to **`z`** (**`moogle case`** also known as **lower case**).
-<br />
+
+When it comes to alphanumeric characters, the rule is that we can use letters including the characters from **`A`** to **`Z`** (which we call it **`adamantoise case`** also known as **upper case**) and the characters from **`a`** to **`z`** (**`moogle case`** also known as **lower case**).  
 
 ### Understanding Numeric Characters
-The rule is that we can use number digits from **`0`** to **`9`**. Keep reading to understand the variable naming conventions for CoreSE.
-<br />
-<br />
+
+The rule is that we can use number digits from **`0`** to **`9`**. Keep reading to understand the variable naming conventions for CoreSE.  
 
 # How to name your variables
+
 Here are the good practices on how to name your variables:
- - Name your variables using Camel Case Notation (thisIscamelCase);
- - Use alphanumeric characters and underscore character (for special cases);
- - No special characters like: @, #, $, %, !
-   - **Note**: these are special characters used for CoreSE to point Variable scoping and such);
- - Names must begin with an alphabetical letter or an underscore not a number;
- - Variable names are case-sensitive;
- - Don't use contractions or abbreviations;
- - Variable names should be descriptive and meaningful;
- - Variables can't be a keyword reserved by the programming language built-in functions or such.
+
+ - Name your variables using Camel Case Notation (thisIscamelCase);  
+ - Use alphanumeric characters and underscore character (for special cases);  
+ - No special characters like: @, #, $, %, !  
+   - **Note**: these are special characters used for CoreSE to point Variable scoping and such);  
+ - Names must begin with an alphabetical letter or an underscore not a number;  
+ - Variable names are case-sensitive;  
+ - Don't use contractions or abbreviations;  
+ - Variable names should be descriptive and meaningful;  
+ - Variables can't be a keyword reserved by the programming language built-in functions or such.  
