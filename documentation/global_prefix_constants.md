@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,16 +33,18 @@
 <br />
 
 # Global Prefix Constants
-**Global Prefix Constants** are in fact properties of the `global object`. In a CoreSE script file the `global object` is the whole **Server Side**, so you can set and access global variables.
 
-Consequently, you can access global variables declared from different **Client Sides**. For example, if a variable called a variable `#userName` declared in a Script, you can refer to this variable from the **Server Side** and **Client Side**.
+**Global Prefix Constants** are in fact properties of the `global object`. In a CoreSE script file the `global object` is the whole **Server Side**, so you can set and access global variables.  
 
-A permanent `global account variable` stored by the Inter Server. They are stored in the `global_acc_reg_num` and `global_acc_reg_str` tables.
+Consequently, you can access global variables declared from different **Client Sides**. For example, if a variable called a variable `#userName` declared in a Script, you can refer to this variable from the **Server Side** and **Client Side**.  
 
-The only difference you will note from normal `#` (**global constant variable**) is that when you have multiple **Inter Servers** connected to the same **Zone Server**. The `#` (**global constant variables**) are unique to each **Inter Server**, while the `##` (**local constant variables**) are shared by all these **Inter Servers**.
+A permanent `global account variable` stored by the Inter Server. They are stored in the `global_acc_reg_num` and `global_acc_reg_str` tables.  
+
+The only difference you will note from normal `#` (**global constant variable**) is that when you have multiple **Inter Servers** connected to the same **Zone Server**. The `#` (**global constant variables**) are unique to each **Inter Server**, while the `##` (**local constant variables**) are shared by all these **Inter Servers**.  
 
 # How to declare a Global Constant Variable
-Here is how to declare `global constant variables`:
+
+Here is how to declare `global constant variables`:  
 
 ```cs
 set ##variableName = 10;
@@ -51,4 +53,4 @@ set ##variableName$ = "Text";
 set ##variableName$, "Text";
 ```
 
-**Note**: The `##` before the `variableName` it is a **global constant variable**.
+**Note**: The `##` before the `variableName` it is a **global constant variable**.  
