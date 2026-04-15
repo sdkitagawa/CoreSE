@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,17 +33,43 @@
 <br />
 
 # For Statement
-**For Statements** are another pretest looping structure. It is considered a specialized form of the `while` statement, and is usually associated with counter-controlled loops. Here are the steps of the `for statement`: 
 
-- The initialize statement is executed first and only once.
-- The condition test is performed. 
-  - When the condition evaluates to `False`, the rest of the for statement is skipped.
-  - When the condition evaluates to `True`, the body of the loop is executed, then the update statement is executed (this usually involves incrementing a variable).
-- Then the condition is reevaluated and the cycle continues.
+**For Statements** are another pretest looping structure. It is considered a specialized form of the `while` statement, and is usually associated with counter-controlled loops. Here are the steps of the `for statement`:  
 
-Check the example below for more:
+- The initialize statement is executed first and only once.  
+- The condition test is performed.  
+  - When the condition evaluates to `False`, the rest of the for statement is skipped.  
+  - When the condition evaluates to `True`, the body of the loop is executed, then the update statement is executed (this usually involves incrementing a variable).  
+- Then the condition is reevaluated and the cycle continues.  
+
+## First example
+
+Check the example below for more:  
 
 ```cpp
 for( .@i = 1; .@i <= 5; .@i++ )
   dialog "This line will print 5 times.";
+```
+
+This also works:
+
+```cpp
+for( <.@i = 1; .@i <= 5; .@i++ ) {
+        dialog  "This line will print 5 times.";
+}
+```
+
+## Second example
+
+```cpp
+dialog "This will print the numbers 1 - 5.";
+for( .@i = 1; .@i <= 5; .@i++ )
+        dialog "Number: " + .@i;
+```
+
+```cpp
+dialog "This will print the numbers 1 - 5.";
+for( .@i = 1; .@i <= 5; .@i++ ) {
+        dialog "Number: " + .@i;
+}
 ```
