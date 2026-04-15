@@ -4,17 +4,17 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
-**CoreSE** also contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.
+**CoreSE** also contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.  
 
-**CoreSE** supports procedural programming, object-oriented programming and functional programming. Thanks to special built-in methods, it can also be used as a prototype-based programming language. 
+**CoreSE** supports procedural programming, object-oriented programming and functional programming. Thanks to special built-in methods, it can also be used as a prototype-based programming language.  
 
-**CoreSE** it is also very similar in some ways to C/C++ and Lua, but fundamentally different in some other aspects. The CoreSE language resembles C/C++ and Lua but does not have C/C++'s static typing and strong type checking and it is simple and flexible as Lua. CoreSE follows most of the C/C++ expression syntax, naming conventions and basic control-flow constructs which was the reason why it was named CoreSE (because it follows a different Course).
+**CoreSE** it is also very similar in some ways to C/C++ and Lua, but fundamentally different in some other aspects. The CoreSE language resembles C/C++ and Lua but does not have C/C++'s static typing and strong type checking and it is simple and flexible as Lua. CoreSE follows most of the C/C++ expression syntax, naming conventions and basic control-flow constructs which was the reason why it was named CoreSE (because it follows a different Course).  
 
-**CoreSE** has been developed from scratch for <a href="https://www.gravity.co.kr/" target="_blank">GRAVITY</a> in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.
+**CoreSE** has been developed from scratch for [GRAVITY](https://www.gravity.co.kr/) in order to offer an easy way to write high level code in a scripted language compatible with Lua and Delphi code for Windows platforms. It is written in C++ code that can be compiled on any platform using a C/C++ compiler.  
 
-You can check more about this programming language down below or clicking [here](https://sdkitagawa.github.io/CoreSE).
+You can check more about this programming language down below or clicking [here](https://sdkitagawa.github.io/CoreSE).  
 
 <details>
 
@@ -45,15 +45,15 @@ You can check more about this programming language down below or clicking [here]
 
 ## Features
 
-- Statical and Strong Typing
-- Statical and Strong Scoping
-- Higher-order functions and classes
-- Classes and inheritance
-- Nested classes
-- Instance
-- Garbage collection
-- Built-in unit tests
-- **Optional commas**
+- Statical and Strong Typing  
+- Statical and Strong Scoping  
+- Higher-order functions and classes  
+- Classes and inheritance  
+- Nested classes  
+- Instance  
+- Garbage collection  
+- Built-in unit tests  
+- Optional commas  
 
 ## How does it look a CoreSE code
 
@@ -79,16 +79,17 @@ if((compare(","+.maps$+"," , ","+@map$+",")) && (query_sql("SELECT zoneaccount_i
 
 ## Special thanks
 
-CoreSE was supported by a AEGIS Core which is a closed-source project from [GRAVITY](https://www.gravity.co.kr/). This programming language has great inspiration comes from the elegant <a href="http://www.lua.org" target="_blank">Lua</a> and <a href="https://www.gravity-lang.org/" target="_blank">Gravity</a> programming languages. Special thanks and credits to [**Marco Bambini**](https://github.com/marcobambini) and [**Roberto Ierusalimschy**](https://github.com/roberto-ieru) and [**Luiz Henrique Figueiredo**](https://github.com/lhf) for the logo, documentation and also language structure ideas.
+CoreSE was supported by a AEGIS Core which is a closed-source project from [GRAVITY](https://www.gravity.co.kr/). This programming language has great inspiration comes from the elegant <a href="http://www.lua.org" target="_blank">Lua</a> and [GRAVITY](https://www.gravity.co.kr/) programming languages. Special thanks and credits to [**Marco Bambini**](https://github.com/marcobambini) and [**Roberto Ierusalimschy**](https://github.com/roberto-ieru) and [**Luiz Henrique Figueiredo**](https://github.com/lhf) for the logo, documentation and also language structure ideas.  
 
 ## Documentation
 
-The [Getting Started](https://github.com/sdkitagawa/CoreSE/blob/main/README.md) page is a guide for downloading and compiling the language. There is also a more extensive <a href="https://corese.github.io">language documentation</a>. Official [wiki](https://github.com/sdkitagawa/CoreSE/wiki) is used to collect related projects and tools.
+The [Getting Started](https://github.com/sdkitagawa/CoreSE/blob/main/README.md) page is a guide for downloading and compiling the language. There is also a more extensive <a href="https://corese.github.io">language documentation</a>. Official [wiki](https://github.com/sdkitagawa/CoreSE/wiki) is used to collect related projects and tools.  
 
 ## Where CoreSE is used
 
-- CoreSE is the core language built into AEGIS Core.
-- CoreSE is the scripting language for the [AEGIS Core](https://www.youtube.com/@WarpPortal) game engine.
+- CoreSE is the core language built into AEGIS Core.  
+- CoreSE is the scripting language for the [AEGIS Core](https://www.youtube.com/@WarpPortal) game engine.  
 
 ## License
-CoreSE is available under the permissive MIT license.
+
+CoreSE is available under the permissive MIT license.  
