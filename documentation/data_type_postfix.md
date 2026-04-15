@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,9 +33,10 @@
 <br />
 
 # Data Type Postfix
-As previously stated in this documentation the `Postfix` is always used to define whether a variable is **integer** (**positive** and **negative**, however whole numbers only) or **string**.
 
-You can check all the **Postfix Data Types** possibilities bellow:
+As previously stated in this documentation the `Postfix` is always used to define whether a variable is **integer** (**positive** and **negative**, however whole numbers only) or **string**.  
+
+You can check all the **Postfix Data Types** possibilities bellow:  
 
 ---
 | <center>How to Declare</center> | <center>Descripton</center> |
@@ -60,4 +61,4 @@ You can check all the **Postfix Data Types** possibilities bellow:
 ---
 <br />
 
-You must always used the word `set` or `var` to define your variable, otherwise if a variable was never set, it is considered equal to zero for **integer** variables or an **empty string** (`""`, nothing between the quotes) for **string** variables forever, and no trace remains of it even if it was stored with character or account data.
+You must always used the word `set` or `var` to define your variable, otherwise if a variable was never set, it is considered equal to zero for **integer** variables or an **empty string** (`""`, nothing between the quotes) for **string** variables forever, and no trace remains of it even if it was stored with character or account data.  
