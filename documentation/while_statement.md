@@ -33,17 +33,18 @@
 <br />
 
 # While Statement
-This is probably the simplest and most frequently used **loop structure**. The `while statement` can be interpreted as `while {condition} is true, perform {statement}`.
 
-It is a pretest loop, meaning the conditional expression is tested before any of the statements in the body of the loop are performed.
+This is probably the simplest and most frequently used **loop structure**. The `while statement` can be interpreted as `while {condition} is true, perform {statement}`.  
 
-- If the condition evaluates to `False`, the statement(s) in the body of the loop is/are never executed. 
-- If the condition evaluates to `True`, the statement(s) are executed, then control transfers back to the conditional expression, which is reevaluated and the cycle continues.
+It is a pretest loop, meaning the conditional expression is tested before any of the statements in the body of the loop are performed.  
 
-Check the example below for more:
+- If the condition evaluates to `False`, the statement(s) in the body of the loop is/are never executed.  
+- If the condition evaluates to `True`, the statement(s) are executed, then control transfers back to the conditional expression, which is reevaluated and the cycle continues.  
+
+Check the example below for more:  
 
 ```cpp
 while (10 >= 1)) {
-	doSomething;
+        doThis;
 }
 ```
