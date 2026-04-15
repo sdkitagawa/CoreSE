@@ -4,7 +4,7 @@
 </p>
 <br />
 
-**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.
+**CoreSE** is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by [Douglas Kitagawa](https://github.com/sdkitagawa). It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.  
 
 <details>
 <summary id="learn_more"><b><a href="#learn_more">Learn more</b></a></summary>
@@ -33,23 +33,22 @@
 <br />
 
 # Switch & Case Statement
-The `switch statement` is similar to a series of `if statements` on the same expression. In many occasions, you may want to compare the same variable (or expression) with many different values, and execute a different piece of code depending on which value it equals to. This is exactly what the `switch statement` is used for.
 
-It is important to understand how the `switch statement` is executed in order to avoid mistakes. The `switch statement` executes line by line (actually, statement by statement). In the beginning, no code is executed. Only when a case statement is found with a value that matches the value of the switch expression the case statement(s) will to executed. The parser continues to execute the statements until the end of the switch block, or the first time it sees a break statement. If you don't write a break statement at the end of a case's statement list, the parser will go on executing the statements of the following case (fall-through).
+The `switch statement` is similar to a series of `if statements` on the same expression. In many occasions, you may want to compare the same variable (or expression) with many different values, and execute a different piece of code depending on which value it equals to. This is exactly what the `switch statement` is used for.  
 
-Check the example below for more.
+It is important to understand how the `switch statement` is executed in order to avoid mistakes. The `switch statement` executes line by line (actually, statement by statement). In the beginning, no code is executed. Only when a case statement is found with a value that matches the value of the switch expression the case statement(s) will to executed. The parser continues to execute the statements until the end of the switch block, or the first time it sees a break statement. If you don't write a break statement at the end of a case's statement list, the parser will go on executing the statements of the following case (fall-through).  
+
+Check the example below for more.  
 
 ```cpp
 dialog "Do you want to execute this Switch Statement?";
-switch(select("- Yes, I want!:- No, I don't.")) {
-
+switch(select("Yes, I want:No, I don't")) {
 case 1:
-  		dialog "You said yes!";
-  		break;
-
+        dialog "You said yes!";
+        break;
 case 2:
-  		dialog "Aww, why?";
- 		break;
+        dialog "Aww, why?";
+        break;
 }
 ```
 
