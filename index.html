@@ -476,7 +476,7 @@
             <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/></svg>
           </button>
         </div>
-        <pre class="language-core"><code><span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span> <span class="code-array">[0]</span></span> <span class="code-common">=</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;
+        <pre class="language-core"><code><span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span><span class="code-array">[0]</span></span> <span class="code-common">=</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;
 <span class="code-keyword">setarray</span> <span class="code-scope">.@myArray</span><span class="code-array">[0]</span></span><span class="code-common">,</span> <span class="code-array-position">"Name", "Surname", "Last name", ...</span>;</code></pre>
       </div>
 
@@ -685,8 +685,8 @@
 
 -	<span class="code-script">script</span>	testing_function	-1,{
 
-<span class="code-scope">.@try</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"It is a function"</span>); <span class="code-comment"> // 1</span>
-<span class="code-scope">.@not</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"Not a function"</span>); <span class="code-comment">   // 0</span>
+<span class="code-scope">   .@try</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"It is a function"</span>); <span class="code-comment"> // 1</span>
+<span class="code-scope">   .@not</span> <span class="code-common">=</span> <span class="code-function">is_function</span>(<span class="code-string">"Not a function"</span>); <span class="code-comment">   // 0</span>
 }</code></pre>
       </div>
     </section>
